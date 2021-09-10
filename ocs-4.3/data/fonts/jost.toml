@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Jost"
+
+# Optional Google font URL
+google_fonts = "family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600"
+
+# Font families
+heading_font = "Jost"
+body_font = "Jost"
+nav_font = "Jost"
+mono_font = "Fira Mono"

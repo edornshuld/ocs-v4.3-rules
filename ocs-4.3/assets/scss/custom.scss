@@ -1,0 +1,165 @@
+/* Define Colors */
+
+/* ----- LINK COLORS ----- */
+$light-maroon: #B45064;
+$ole-miss-blue: #50A7B4;
+$ole-miss-blue-transparent: #B5D9DF;
+$msu-maroon: #5D1725;
+$pink-code: #E83E8C;
+$green-code: #449C72;
+$light-grey-code: #F8F8F8;
+
+/* md/Rmarkdown TOC Link Colors */
+#TableOfContents li a.active {
+  color: $light-maroon;
+  font-weight: 600;
+}
+
+/* Docs TOC Link Colors */
+.docs-sidebar .docs-toc-item.active a, .docs-sidebar .docs-toc-item a.active,
+.docs-sidebar .nav > .active:hover > a, .docs-sidebar .nav > .active > a {
+  font-weight: bold;
+  color: $light-maroon;
+  background-color: transparent;
+}
+
+/* Links Color (includes FAB icons) */
+a, h3.article-title a:hover {
+  color: $light-maroon;
+}
+
+/* Navbar Links Color */
+.navbar .navbar-nav .nav-link.active {
+  font-weight: bold !important;
+  color: $light-maroon !important;
+}
+
+/* Code Font and Color */
+pre, code {
+  font-family: "Fira Mono", monospace;
+  color: $green-code;
+  background-color: $light-grey-code !important;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Text Selection Color (highlight text with mouse) */
+::-moz-selection { /* Code for Firefox */
+  background: $ole-miss-blue-transparent;
+}
+
+::selection {
+  background: $ole-miss-blue-transparent;
+}
+
+/* FAB icon size homepage */
+.big-icon {
+  font-size: 1.50rem;
+}
+
+/* Space before FAB icons on homepage */
+#profile .network-icon {
+  margin-top: 15px;
+}
+
+/* Add horizontal scroll to tables */
+table {
+  overflow-x: hidden;
+}
+
+/* Indent links and change font size in left TOC for books/docs */
+.docs-sidebar .nav>li>a {
+  padding-left: 2.20rem;
+  font-size: 0.90rem;
+}
+
+/* Indent links in floating (right) TOC for books/docs */
+#TableOfContents {
+  padding-left: 0.5em;
+}
+
+/* Solution Environment */
+#solution {
+  background-color: #006ba60a;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Width of books/docs main pages */
+.docs-article-container {
+  max-width: 860px;       /* Default: 720px */
+}
+
+/* Custom Font for Headings (H1, H2, H3, H4, H5, H6, H7) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .67em; }
+body { font-size: 1.00em; }
+@media (max-width: 991.98px) { body { font-size: 1.24em; } }
+
+/* <p> Bold Font Setting */
+b, strong {
+    font-weight: 600;
+}
+
+/* Section Font Subheading -- Lower font weight to 500 */
+.section-subheading {
+  font-weight: 600;
+}
+
+/* navbar font settings */
+.navbar {
+  height: 70px;
+  background: #fff;
+  font-size: 18px;
+  position: fixed;
+  padding: 0 1rem;
+}
+
+
+/* Article Container Width (Posts, Other, CompChem, etc.) */
+.article-container {
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+/* Navbar height for media (phones, tablets, etc.) */
+@media (max-width: 991.98px){
+  .navbar {
+    height: 50px;
+  }
+}
+
+/* Ensure pages show below the navbar */
+
+body {
+  margin-top: 70px !important;
+}
+
+@media (max-width: 991.98px){
+  body {
+    margin-top: 50px !important;
+  }
+}
+
+/* navbar scroll up js */
+.navbar { transition: top 0.5s ease; }
+.navbar-hide { top: -70px; }
+
+/* Smooth Scrolling */
+html { scroll-behavior: smooth; }
+
+.MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
