@@ -1,0 +1,2051 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+    <meta name="google-site-verification" content="d3jrhKJk5FLjODpHv5yEgLpQ_2rDKZk_MEhSQyO1Dkw" />
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In very general terms, “Active” aircraft execute missions from their Air Bases to hexes within their range. A player’s Active aircraft can perform missions in friendly Movement, Exploitation, and Reaction Phases." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/14-0-air-power/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1a4ac5a75a46a9065d654e5c418374b5.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131839893-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-131839893-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/14-0-air-power/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="OCS Series Rules, 4.3" />
+  <meta property="og:url" content="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/14-0-air-power/" />
+  <meta property="og:title" content="14.0 Air Power | OCS Series Rules, 4.3" />
+  <meta property="og:description" content="In very general terms, “Active” aircraft execute missions from their Air Bases to hexes within their range. A player’s Active aircraft can perform missions in friendly Movement, Exploitation, and Reaction Phases." /><meta property="og:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-08-09T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-08-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>14.0 Air Power | OCS Series Rules, 4.3</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="b77faf7dbd5471919b91c53da1f72bf1" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/rules/ocs-4.3"><span>OCS 4.3 Rules</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          OCS Series Rules, 4.3
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/rules/"><i class="fas fa-arrow-left pr-1"></i>Rules</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/rules/ocs-4.3/">OCS Series Rules, 4.3</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/rules/ocs-4.3/1-0-scale/">1.0 Scale</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/2-0-sequence-of-play/">2.0 Sequence of Play</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/3-0-units-and-markers/">3.0 Units and Markers</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/4-0-general-concepts/">4.0 General Concepts</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/5-0-modes/">5.0 Modes</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/6-0-ground-movement/">6.0 Ground Movement</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/7-0-reaction-phase/">7.0 Reaction Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/8-0-overrun/">8.0 Overrun</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/9-0-ground-combat/">9.0 Ground Combat</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/10-0-barrage/">10.0 Barrage</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/11-0-exploitation-phase/">11.0 Exploitation Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/12-0-supply/">12.0 Supply</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/13-0-specialized-units/">13.0 Specialized Units</a></li>
+
+
+
+  <li class="active"><a href="/rules/ocs-4.3/14-0-air-power/">14.0 Air Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/15-0-air-bases/">15.0 Air Bases</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/16-0-hedgehogs/">16.0 Hedgehogs</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/17-0-weather/">17.0 Weather</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/18-0-naval-power/">18.0 Naval Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/19-0-ports-and-shipping/">19.0 Ports and Shipping</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/20-0-breakdowns/">20.0 Breakdowns</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/21-0-optional-rules/">21.0 Optional Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/house-rules/">House Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/terms-and-definitions/">Terms and Definitions</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/summaries/">Summaries</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#141-aircraft--basic-handling">14.1 Aircraft &amp; Basic Handling</a></li>
+    <li><a href="#142-aircraft-movement">14.2 Aircraft Movement</a></li>
+    <li><a href="#143-air-combat">14.3 Air Combat</a></li>
+    <li><a href="#144-flak">14.4 Flak</a></li>
+    <li><a href="#145-interception">14.5 Interception</a></li>
+    <li><a href="#146-fighter-sweep">14.6 Fighter Sweep</a></li>
+    <li><a href="#147-barrage--hip-shoots">14.7 Barrage &amp; Hip Shoots</a></li>
+    <li><a href="#148-trainbusting">14.8 Trainbusting</a></li>
+    <li><a href="#149-air-transport">14.9 Air Transport</a></li>
+    <li><a href="#1410-air-drop">14.10 Air Drop</a></li>
+    <li><a href="#1411-base-transfer">14.11 Base Transfer</a></li>
+    <li><a href="#example-air-barrage-missions">Example: Air Barrage Missions</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/">
+      
+        Rules
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/ocs-4.3/">
+      
+        OCS Series Rules, 4.3
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        14.0 Air Power
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>14.0 Air Power</h1>
+
+          <div class="article-style">
+            <hr>
+<p>In very general terms, “Active” aircraft
+execute missions from their Air Bases
+to hexes within their range. A player’s
+Active aircraft can perform missions in
+friendly Movement, Exploitation, and
+Reaction Phases. Air units never need
+Reserve markers.</p>
+<p>Mission types include Barrage (hitting
+enemy facilities or units), Fighter Sweeps
+(cleaning out enemy aircraft), Interception 
+(disrupting enemy missions),
+Air Transport (hauling ground units
+to another Air Base), Air Drop (doing
+the same to a hex without a base), and
+Transfer (moving to a new base).</p>
+<p>When executing a mission, follow the
+sequence given in <a href="#142-aircraft-movement">14.2f</a> and then have
+the planes become “Inactive” at an Air
+Base before executing the next mission.
+During a future Refit Phase, Inactive
+planes can become Active once more.</p>
+<h2 id="141-aircraft--basic-handling">14.1 Aircraft &amp; Basic Handling</h2>
+<p>Air units represent groups of specific
+planes (such as Bf-109s) that are rated
+for Type, Range, Air Combat Rating,
+Barrage Strength, and (sometimes) Air
+Transport Capacity. While an aircraft
+unit represents roughly 45 aircraft, it is
+assumed the operational rate of these is
+well under 100%. The game uses five
+types of aircraft:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/fighters-14.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Fighters (F)</strong> are the only air
+units able to fly Interception
+missions and attack during
+Air Combat. Active Fighters
+also exert a “Patrol Zone”
+that interferes with enemy
+air missions.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/tac-bombers-14.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Tactical Bombers (T)</strong> are
+used mainly for Air Barrage.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/strat-bombers-14.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Strategic Bombers (S)</strong> are
+used mainly for Air Barrage,
+but suffer from limitations
+that include the inability to
+Hip Shoot. See <a href="#141-aircraft--basic-handling">14.1e</a>.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/transports-14.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Transports (Tpt)</strong> are able
+to move cargo. A Transport
+uses its capacity to fly units
+and supplies from an airbase
+to a new location.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/combo-types-14.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Combo Types</strong> are two types
+in one, usually T and Tpt.
+These units can function as
+either listed type.</p>
+<p><strong>14.1a Active and Inactive Aircraft.</strong>
+Aircraft have two modes: Active or Inactive.
+An aircraft’s mode is shown by it
+being above (Active) or below (Inactive)
+the Air Base counter. Basically, Active
+aircraft can conduct missions and Inactive
+ones cannot. Active aircraft in a
+friendly Air Base hex can remain Active
+indefinitely.</p>
+<p><strong>14.1b Aircraft Step Losses.</strong> Aircraft
+have <strong>two</strong> steps each. Use the reverse
+(reduced) side of the counter to show a
+step loss. Aircraft which take a second
+step loss are eliminated and placed in
+the Dead Pile.</p>
+<p><strong>14.1c Aborts &amp; Return to Base.</strong> Air
+units that execute a mission (see <a href="#142-aircraft-movement">14.2f</a>)
+or “abort” from air combat must return
+to a friendly air base within their range
+and become Inactive. (<strong>Exceptions</strong>: A
+Fighter remains Active after completing
+a successful Interception (<a href="#145-interception">14.5</a>), and
+after a Base Transfer (<a href="#1411-base-transfer">14.11</a>) done at
+normal range.)</p>
+<ul>
+<li>Aircraft that abort before/during an
+Air Combat over a friendly air base
+must return to <strong>that</strong> base. (<strong>Exception:</strong> 
+see <a href="#145-interception">14.5</a> for special handling
+of Interceptors.)</li>
+</ul>
+<p><strong>14.1d Refit.</strong> Refit (<a href="../15-0-air-bases/">15.0</a>) is needed to
+keep aircraft in action (think of it as
+fueling and routine maintenance). It
+is how Inactive aircraft become Active.
+Refit is the only time aircraft need or
+consume supply.</p>
+<p><strong>14.1e Strategic Bombers.</strong> Missions that
+include Strategic Bombers suffer several
+limitations due to their high-altitude
+operations:</p>
+<ul>
+<li><strong>A)</strong> Barrages are always considered to
+be unspotted.</li>
+<li><strong>B)</strong> Hip Shoots and anti-ship barrage
+missions are never allowed.</li>
+<li><strong>C)</strong> The short-range barrage shift is
+never received.</li>
+</ul>
+<p><strong>14.1f Weather.</strong> Weather can inhibit
+air operations, restricting missions to
+certain phases and sometimes allowing
+“no flight” at all. During weather when
+missions cannot be flown, Active air
+units remain Active and aircraft can
+be refit.</p>
+<p><strong>14.1g Phasing.</strong> Active planes can fly
+missions during friendly Movement,
+Exploitation, and Reaction Phases.</p>
+<h2 id="142-aircraft-movement">14.2 Aircraft Movement</h2>
+<p>Aircraft have stacking limits and move
+by being lifted directly from their air
+base to the mission’s target hex. Aircraft
+move in various phases and segments,
+depending on the mission.</p>
+<p><strong>14.2a Aircraft Stacking.</strong> Count each air
+unit (whether reduced or full-strength)
+as one unit for stacking. A maximum
+of four <strong>Active</strong> aircraft can execute a
+mission together. On a friendly Air Base,
+a maximum of four friendly aircraft <strong>plus</strong>
+the Air Base Level can be Active at one
+time (so, a Level 3 Air Base can have a
+total of seven Active aircraft). There is no
+limit to the number of Inactive aircraft
+that can stack at a base.</p>
+<p><strong>14.2b</strong> A player can voluntarily abort
+planes in a hex to avoid an Air Combat
+before it starts, but at least one air unit
+must stay Active and fight. See <a href="#143-air-combat">14.3d</a>.</p>
+<p><strong>14.2c Aircraft Movement.</strong> An Active
+air unit voluntarily moves only when
+conducting a mission. When an Air Base
+is captured by enemy ground units, all
+air units at the base are displaced (and
+possibly suffer a loss) per <a href="../9-0-ground-combat/#914-specialized-combats">9.14f</a>.</p>
+<p><strong>14.2d</strong> An aircraft’s range is the limit it
+can travel (in hexes) when flying either
+to a mission hex or returning from one.
+Aircraft move by simply placing them in
+any hex within range, without regard to
+terrain or enemy units. There is no need
+to trace a specific path.</p>
+<p><strong>14.2e Air Missions.</strong> Active planes can
+perform the following missions. Aircraft
+can not perform a combined air mission
+(such as “Sweep then Barrage”) and can
+only fly a single mission per phase. For
+each mission, follow the Air Movement
+Sequence (<a href="#142-aircraft-movement">14.2f</a>).</p>
+<p><strong>Important Notes:</strong> “Mission aircraft”
+means the air units that are performing
+a mission. Missions are never restricted
+to aircraft of a certain type. For instance,
+a Fighter is allowed to take part in an
+Air Transport mission.</p>
+<ul>
+<li><strong>Interception (<a href="#145-interception">14.5</a>).</strong> The ability to
+‘jump’ enemy air units before they
+perform their mission.</li>
+<li><strong>Fighter Sweep (<a href="#146-fighter-sweep">14.6</a>).</strong> A Fighter
+Sweep is designed to engage enemy
+planes in air combat. Fighter Sweeps
+are executed in the various Movement Segments.</li>
+<li><strong>Barrage (<a href="#147-barrage--hip-shoots">14.7</a>).</strong> A Barrage is an air
+attack on enemy facilities or ground
+units. Barrage missions are executed
+in the various Barrage Segments.</li>
+<li><strong>Hip Shoot (<a href="#147-barrage--hip-shoots">14.7d</a>).</strong> A Hip Shoot is
+a special type of barrage made during
+a Movement Segment instead of a
+Barrage Segment. Hip Shoots also
+allow the same hex to be hit more
+than once in a single phase. Only
+certain air forces can do Hip Shoots,
+however, and this will be noted in
+game-specific rules.</li>
+<li><strong>Trainbusting (<a href="#148-trainbusting">14.8</a>).</strong> This allows
+aircraft to interdict enemy ground
+and rail movement. Trainbusting
+missions are executed during the
+various Barrage Segments.</li>
+<li><strong>Air Transportation (<a href="#149-air-transport">14.9</a>)</strong> and <strong>Air Drop 
+(<a href="#1410-air-drop">14.10</a>)</strong>. The delivery of cargo
+(combat units or SP) by air, either
+by unloading them at an Air Base
+or dropping them in some other
+hex. Air Transport and Air Drop
+Missions are executed in the various
+Movement Segments.</li>
+<li><strong>Base Transfer (<a href="#1411-base-transfer">14.11</a>).</strong> Movement
+of your aircraft from one Air Base
+to another. Transfers are executed
+in the various Movement Segments.</li>
+</ul>
+<p><strong>Important Note:</strong> There are no limits
+placed on the number of non-barrage
+missions that can be flown to the same
+hex in a phase. For instance, a player
+wanting to Air Drop 1T of supply to
+a surrounded tank division could keep
+flying mission after mission until he
+successfully lands the needed supplies. A
+player could also Hip Shoot a hex several
+times in the phase. Other barrages are
+limited to one to a hex each phase.</p>
+<p><strong>14.2f Air Mission Sequence.</strong> Follow
+this complete sequence when executing
+a mission. Aircraft from more than one
+Air Base (up to a combined limit of four
+air units) can execute a mission together,
+with air units from each base moving
+separately (there is no need to “link up”
+before reaching target hex):</p>
+<ul>
+<li><strong>A)</strong> Declare the mission type (such as
+Trainbusting or Barrage).</li>
+<li><strong>B)</strong> Move aircraft from one or more
+bases to the mission hex.</li>
+<li><strong>C)</strong> Resolve any Air Combat (<a href="#143-air-combat">14.3</a>) if
+both players have Active aircraft
+in the mission hex.</li>
+<li><strong>D)</strong> Resolve any Interception (<a href="#145-interception">14.5</a>).</li>
+<li><strong>E)</strong> Resolve any Flak (<a href="#144-flak">14.4</a>).</li>
+<li><strong>F)</strong> Resolve the mission.</li>
+<li><strong>G)</strong> The aircraft return to base (<a href="#141-aircraft--basic-handling">14.1c</a>)
+and usually become Inactive.</li>
+</ul>
+<p><em><strong>Play Note:</strong> Planes can no longer be added
+to a mission after Step C, so remember to
+perform needed Fighter Sweeps during the
+Movement Segment!</em></p>
+<h2 id="143-air-combat">14.3 Air Combat</h2>
+<p>When both sides have Active planes
+in a hex, Air Combat is immediately
+resolved. This will only happen when
+the mission hex has an enemy air base
+with Active aircraft, or during Interception 
+(<a href="#145-interception">14.5</a>). An Air Combat consists of
+a series of rounds during which each
+player selects one unit to use. The result
+of the round will be the abort (see <a href="#141-aircraft--basic-handling">14.1c</a>)
+and possible loss of one or both of the
+selected aircraft. These rounds continue
+until one side or the other is alone in the
+hex (or there are no Active planes left
+with a non-parenthesized Air Combat
+Rating).</p>
+<p>Ignore all Inactive aircraft during Air
+Combat; they do not take part at all.</p>
+<p><strong>14.3a Parenthesized Ratings.</strong> Aircraft
+with parenthesized Air Combat Ratings
+<strong>cannot</strong> initiate Air Combat. They can
+still enter a hex with enemy aircraft,
+however. If all the aircraft in a hex (both
+sides) have parenthesized Air Combat
+Ratings, the aircraft ignore one another
+(and there is no Air Combat).</p>
+<p><strong>14.3b Modifiers to Air Combat.</strong> There
+are none except when using the Long
+Range option (<a href="../21-0-optional-rules/#214-long-range-air---b">21.4</a>).</p>
+<p><strong>14.3c Attacker Identification.</strong> In Air
+Combat the “attacker” will normally be
+the player initiating the battle (mission
+player or Interceptor). The roles switch
+if the erstwhile “attacker” only has air
+units with Parenthesized Ratings, and
+the combat ends completely if all Active
+planes in the hex have Parenthesized
+Ratings—the remaining planes ignore
+each other and the mission continues.</p>
+<p><strong>14.3d Voluntary Aborts.</strong> Voluntarily
+Aborting from an Air Combat (thus
+becoming Inactive) is sometimes useful:</p>
+<ul>
+<li><strong>A)</strong> Either player has the option to
+abort some of his aircraft in the
+hex before the Air Combat starts,
+but at least one air unit <strong>must</strong> be
+kept Active and fight.</li>
+<li><strong>B)</strong> Neither player has the option to
+abort after an Air Combat starts.
+(It continues until only one player
+has Active aircraft in the hex, or
+both sides run out of non-paren-
+thesized aircraft.)</li>
+<li><strong>C)</strong> Active air units can voluntarily
+abort after completely finishing
+an Air Combat.</li>
+</ul>
+<p><strong>14.3e Air Combat Procedure.</strong></p>
+<ul>
+<li><strong>A)</strong> Both players lay out their aircraft
+in plain view. Voluntary aborts
+(14.3d) are made now.</li>
+<li><strong>B)</strong> The attacker (<a href="#143-air-combat">14.3c</a>) selects one of
+his non-parenthesized air units,
+then the defender selects any of
+his air units. These are the aircraft
+used in the current combat round.</li>
+<li><strong>C)</strong> The attacker rolls two dice, adding
+it to his Air Combat Rating, and
+then subtracting the defending Air
+Combat Rating. Use this modified
+roll on the Air Combat Table to
+identify which aircraft, either one
+or both, must abort. Finally, roll
+a third die—the “loss” die—to
+determine if the aborted unit(s)
+must also take a step loss. This
+happens on a roll of 5 or 6.</li>
+<li><strong>D)</strong> Repeat B and C (each couplet is a
+round of combat) with the same
+or different aircraft until one side
+or the other remains alone in the
+hex (or until neither player has any
+Active Fighters left).</li>
+</ul>
+<p><em><strong>Play Hint:</strong> Roll three dice at once—two
+“combat” dice and an off-colored “loss”
+die—to speed Air Combat resolution.</em></p>
+<p><em><strong>Example:</strong> One LaGG-3 (Air Combat
+Rating of 2) and one IL-2 Air Combat
+Rating of (2)) move into a German Air
+Base hex occupied by one Active Bf 109f
+(Air Combat Rating of 4) and two Stukas
+(Air Combat Rating of (1)) along with
+several Inactive aircraft. All of the above
+are at full strength. The Soviets are the
+attackers.</em></p>
+<p><em>Each player selects the aircraft of his choice
+for the first round of Air Combat. The
+Soviets select the LaGG-3; the Germans
+pick the Bf 109f. The defending Germans
+could also have picked one of the Stukas
+(not a bright move, but allowed). The
+attacking Soviets could not have picked
+the IL-2 because of its parenthesized Air
+Combat Rating. The Soviet player rolls
+two dice (getting a 9) to which he adds
+his aircraft’s rating (2) and subtracts the
+German unit’s rating (4) for a modified
+roll of 7. The Air Combat Table gives
+“Both Abort.” The Soviet player rolls one
+die and no losses result, so both players
+send their aircraft back to base where they
+become Inactive.</em></p>
+<p><em>This leaves the two Stukas facing the IL-2.
+None of these can attack, so the combat
+ends and the two forces ignore each other.
+The Soviets can then barrage the Air Base.</em></p>
+<h2 id="144-flak">14.4 Flak</h2>
+<p>In Step E of the Air Mission Sequence
+(<a href="#142-aircraft-movement">14.2f</a>), the enemy player checks to see
+if his abstracted air defenses (“Flak”)
+disrupt the mission. Normal Flak reflects
+only ground-to-air fires—most combat
+units have some anti-aircraft ability,
+and the design also assumes nominal
+Flak assets are deployed at important
+potential targets. The intensity of ground
+Flak is increased if the mission is flown
+into an enemy Patrol Zone (<a href="#144-flak">14.4a</a>).</p>
+<p><strong>14.4a Missions Subject to Flak.</strong></p>
+<ul>
+<li><strong>Always:</strong> Barrage, Hip Shoot, and
+Trainbusting.</li>
+<li><strong>Only if in an enemy Patrol Zone:</strong>
+Air Transport, Air Drop, and Base
+Transfer.</li>
+<li><strong>Never:</strong> Fighter Sweep and Interception, 
+and all non-mission activity
+(such as placing air reinforcements
+and returning to an air base).</li>
+</ul>
+<p><strong>14.4b</strong> Supply considerations never affect
+Flak, nor is there any SP cost for Flak
+rolls.</p>
+<p><strong>14.4c</strong> Patrol Zone. A Patrol Zone (PZ)
+is a defensive area created by any Air
+Base with one or more Active Fighters,
+and extends 10 hexes in all directions.
+Enemy air missions that target a hex in
+a PZ are subject to Interception (<a href="#145-interception">14.5</a>)
+and heavier Flak.</p>
+<p><strong>14.4d Non-Mission Aircraft.</strong> Extra air
+units will sometimes be stacked with
+mission aircraft. For instance, an Active
+aircraft might be at a friendly Air Base
+receiving a Transport mission. Only
+mission aircraft are affected by Flak.
+(But note any “extra” planes would be
+affected by Interception, taking part in
+the Air Combat along with the mission
+aircraft.)</p>
+<p><strong>14.4e Flak Resolution.</strong> Roll two dice.
+If the modified result is 11 or more, one
+mission aircraft step is lost. Otherwise,
+the Flak has no effect and resolution is
+complete.</p>
+<p>The dice roll is modified by the Flak
+Points affecting the mission, per the
+charts and tables.</p>
+<p><strong>14.4f Flak Losses.</strong> If a loss is inflicted,
+one of the mission aircraft takes a loss
+<strong>before</strong> conducting the mission. Other-
+wise, the Flak has no effect. Determine
+which air unit in a stack takes the loss by
+using the Mission Loss Table. Remove
+an eliminated aircraft; those with one
+step remaining finish the mission using
+their reduced values.</p>
+<p><strong>14.4g Cargo Losses.</strong> If there is a change
+in a Transport mission’s cargo capacity
+because of Flak, recalculate the avail-
+able load (keeping in mind range effects
+of <a href="#149-air-transport">14.9e</a>) and destroy a portion of the
+cargo (player’s choice) that exceeds the
+new capacity. Round in <strong>favor</strong> of cargo
+survival (e.g. if 1T is being transported
+and the aircraft drops from 1T to 1/2T
+capability, the 1T survives and arrives
+successfully).</p>
+<h2 id="145-interception">14.5 Interception</h2>
+<p>In Step D of the Air Mission Sequence
+(<a href="#142-aircraft-movement">14.2f</a>), a player will sometimes have the
+option to intercept an enemy mission.
+Only a mission that is subject to Flak
+(per <a href="#144-flak">14.4a</a>) can be intercepted, and then
+only if the mission hex is in a Patrol
+Zone. The player can intercept with a
+single Active Fighter with a Patrol Zone
+into the mission hex. The player is not
+required to intercept (it is his option)
+and can only do so once per mission.</p>
+<p><strong>Important Note:</strong> Interception missions
+are never prevented by game-specific
+weather and/or phase restrictions.</p>
+<p>Interception is resolved as Air Combat.
+If non-mission aircraft are present, see
+<a href="#144-flak">14.4d</a>. Handle the intercepting Fighter
+after the combat as a special case:</p>
+<ul>
+<li>If the interceptor loses, it becomes
+Inactive at the air base from which
+it came.</li>
+<li>If the interceptor wins, it stays
+Active at the air base from which it
+came. The plane is <strong>not</strong> considered
+to have flown a mission and thus is
+eligible to intercept another enemy
+mission later in the same phase.</li>
+</ul>
+<h2 id="146-fighter-sweep">14.6 Fighter Sweep</h2>
+<p>Fighter Sweep missions are done during
+Movement Segments. In these a Fighter
+is moved to a hex with Active enemy
+aircraft and engages in Air Combat. Win
+or lose, the mission Fighter is aborted
+to an air base within range when the
+rounds of combat conclude. A hex can
+be the target of any number of Fighter
+Sweeps in the same segment.</p>
+<p><em><strong>Play Note:</strong> There is no reason to have
+more than one fighter per Sweep mission,
+since multiple Sweeps can be flown against
+the same hex.</em></p>
+<h2 id="147-barrage--hip-shoots">14.7 Barrage &amp; Hip Shoots</h2>
+<p>Aircraft make use of Barrage missions to
+attack enemy ships, ground units, and
+facilities. What follows are the specifics
+of Barrage missions; <a href="../10-0-barrage/">10.0</a> covers the
+more general rules of Barrage and <a href="../18-0-naval-power/#183-naval-combat">18.3</a>
+describes anti-ship barrages. All the usual
+modifiers for Barrage (including spotters) 
+apply to air barrages as well.</p>
+<p>A given hex can normally be barraged
+just once in a phase, but Hip Shoots do
+not count against this limit.</p>
+<p><strong>14.7a</strong> Aircraft <strong>can never combine</strong> with
+artillery or ships in a single barrage. An
+Air Barrage never has any supply cost
+of its own.</p>
+<p><strong>14.7b Air Barrage and Phasing.</strong> Air
+units move to a mission hex during a
+Barrage Segment. Follow the sequence
+given in <a href="#142-aircraft-movement">14.2f</a>. Aircraft are subject to
+Flak (see <a href="#144-flak">14.4</a>) before the barrage, and
+<strong>must</strong> return to an air base and become
+Inactive immediately after the barrage
+is resolved.</p>
+<p><strong>14.7c Short Range Barrage Modifier.</strong>
+Range effects apply when all aircraft
+conducting the barrage are at or within
+10 hexes of the base from which they
+flew. These barrages get an additional
+rightward shift on the Barrage Table.
+<strong>Never</strong> apply this shift to Strat Bombers.</p>
+<p><strong>14.7d Hip Shoots.</strong> Hip Shoots are done
+during Movement Segments. They are
+resolved like normal Barrages (<a href="#147-barrage--hip-shoots">14.7</a>),
+with some exceptions and restrictions:</p>
+<ul>
+<li><strong>A)</strong> Hip Shoots do not count against
+the limit of one barrage against
+a hex in a phase. This means a
+hex can be barraged by multiple
+Hip Shoots in a phase, and also
+be subjected to a “regular” barrage
+during the same phase.</li>
+<li><strong>B)</strong> A Hip Shoot must be made by a
+<strong>single</strong> aircraft and its nationality
+<strong>must</strong> be listed in the game-specific
+rulebook as having the special Hip
+Shoot capability.</li>
+<li><strong>C)</strong> A Hip Shoot *<strong>requires</strong> a correct
+spotter (<a href="../10-0-barrage/">10.0b</a>).</li>
+<li><strong>D)</strong> Given the above, a Hip Shoot can
+hit any <strong>type</strong> of target. (<strong>Exception</strong>:
+Trainbusting cannot be performed
+as a Hip Shoot.)</li>
+</ul>
+<h2 id="148-trainbusting">14.8 Trainbusting</h2>
+<p>Trainbusting missions disrupt enemy
+rail traffic as well as columns of troops,
+vehicles, and pack animals moving in
+an area. Only one Trainbusting mission
+per hex per phase is allowed, and only
+one Trainbusting marker can be placed
+in any hex. These missions cannot be
+executed as Hip Shoots.</p>
+<p><strong>14.8a Execution.</strong> Move the mission
+stack to the target hex. Resolve Flak
+(see <a href="#144-flak">14.4</a>) and then attack the hex using
+the Barrage vs. Facility Table. If the
+result contains an asterisk, place a Trainbusting 
+marker in the hex (otherwise
+there is no effect). Regardless of success,
+the aircraft return to base and become
+Inactive.</p>
+<p><strong>14.8b Trainbusting Zone.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/trainbusting-14.8b.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>A Trainbusting 
+Zone (TZ) is the hex
+with a Trainbusting marker
+plus the six adjacent hexes.
+(<strong>Exception</strong>: For movement
+using Leg MP, a Trainbusting Zone is
+limited to just the marker’s hex.)</p>
+<p><strong>14.8c Trainbusting Effects.</strong> The Trainbusting 
+Zone affects enemy ground unit
+movement and rail costs.</p>
+<ul>
+<li>Ground units must add 1 MP to the
+terrain cost of every hex entered that
+is in a TZ.</li>
+<li>Rail cargo passing through a TZ
+uses double the normal Rail Cap.
+The increase in cost is applied only
+once, even if the cargo is transported
+in and/or out of multiple TZ.</li>
+<li>Ships, aircraft, sea cap, and supply
+paths are unaffected by a TZ.
+Note there is never an additional effect
+on a hex due to overlapping TZ, and a
+TZ has no effect on retreats.</li>
+</ul>
+<p><strong>14.8d Phasing.</strong> Trainbusting barrages
+can be made in the barrage segment of
+any phase allowing a player’s aircraft
+to conduct missions. The markers are
+removed in the next <strong>enemy</strong> Clean Up
+Phase and their effects are continuous
+until then.</p>
+<h2 id="149-air-transport">14.9 Air Transport</h2>
+<p>Air Transport allows the player to use his
+Transports to move supplies and units
+around the map.</p>
+<p>Air Transport can occur in any friendly
+Movement Segment.</p>
+<p><strong>14.9a</strong> Transports have a printed trans-
+port capacity. They can carry any load
+up to that capacity. (See <a href="../4-0-general-concepts/#47-transportation-equivalents">4.7</a> 
+for Transportation Equivalents.) 
+Transports at
+the same air base can combine their
+transport capacity to carry cargo. For
+instance, two aircraft with a capacity of
+“1/2T” could carry a parachute battalion
+that has a transport equivalence of 1T.</p>
+<p><strong>14.9b</strong> Some Transports have a transport 
+capacity of 1/2T. These units must
+usually use rule <a href="#149-air-transport">14.9a</a>, combining to
+move 1T amounts. Alternatively, they
+can move 1T when making a double
+capacity trip using <a href="#149-air-transport">14.9e</a>. <strong>In no case</strong>
+can the 1/2T amount be saved for later
+or be rounded up to 1T. (<strong>Exception:</strong>
+cargo survival, <a href="#144-flak">14.4h</a>).</p>
+<p><strong>14.9c Cargo Types.</strong> Supply Points can
+be transported by air, as can combat
+units that are in <strong>Move Mode</strong> with an
+MA of <strong>10 or less Leg MP</strong>.</p>
+<p><strong>14.9d</strong> Combat units can move up to 1/2
+their MA during the phase it is carried
+by Air Transport (per <a href="../4-0-general-concepts/#47-transportation-equivalents">4.7d</a>). 
+This can be
+done before or after the Air Transport
+mission (or both) provided no more
+than 1/2 MA is expended.</p>
+<p>There are important mode and phasing
+considerations. SP cannot be moved
+before/after a mission due to “leapfrog”
+restrictions. Combat units can change
+to Move Mode prior to Air Transport
+in Movement Phase, but are not able
+to “flip” orientation during Reaction
+or Exploitation. Combat units must be
+released reserves to move (and possibly
+attack) before/after a mission during
+Reaction or Exploitation. All other units
+being air transported in these phases
+essentially have an MA of zero (and
+cannot attack). Note that units moving
+before/after the mission in Reaction have
+their MA halved twice, for a total of
+×1/4 MA.</p>
+<p><strong>14.9e</strong> Air Transport missions are flown
+to any friendly air base. Treating each
+plane separately, the mission hex can&hellip;</p>
+<ul>
+<li><strong>A)</strong> &hellip;be at twice the plane’s range,
+provided it is made Inactive at the
+destination air base, or</li>
+<li><strong>B)</strong> &hellip;be at the plane’s normal range,
+in which case it returns to any air
+base within normal range after the
+mission (Note: It goes inactive), or</li>
+<li><strong>C)</strong> &hellip;be at half the plane’s range, in
+which case its transport capacity is
+<strong>doubled</strong> and it returns to any air
+base within half of its range after
+the mission (Note: It goes inactive).</li>
+</ul>
+<p><strong>14.9f</strong> A given air base can only unload
+2T times the base Level per Movement
+Segment using Air Transport. However,
+<strong>any</strong> amount of cargo can be unloaded
+<strong>if</strong> the Transports in excess of this limit
+become Inactive in the destination hex.</p>
+<h2 id="1410-air-drop">14.10 Air Drop</h2>
+<p>An Air Drop is a form of Air Trans-
+port that does not require a friendly air
+base at the destination. Air Drops also
+differ in that sometimes they must be
+planned in advance and the cargo may
+be destroyed in the attempt. Air Drop
+can be done either by parachute or glider
+landings. The rules in Section <a href="#149-air-transport">14.9</a> apply
+to Air Drops except where they differ
+with the rules below.</p>
+<p><strong>14.10a Unit Eligibility.</strong> Only SP and
+combat units with the “Para” symbol
+can Air Drop. (<strong>Exception:</strong> Any combat
+unit that can be air transported can land
+via glider, per <a href="#1410-air-drop">14.10e</a>.)</p>
+<p><strong>14.10b Prior Planning.</strong> Air Drops of
+<strong>combat units</strong> have special restrictions.
+They can only be made in the Movement 
+Phase and require a Drop Plan—a
+written record of the hex where each
+combat unit will be dropped and the
+specific turn the mission will take place.
+You must make this plan either before
+the game begins <strong>or</strong> at least two turns
+in advance of the scheduled drop. Plan
+these drops in the Aircraft Refit Phase.
+No unit can ever be on more than one
+Drop Plan at a time.</p>
+<p><strong>Important Notes:</strong></p>
+<ul>
+<li>Units making planned air drops do
+not require trace supply on the turn
+they are dropped (<a href="../12-0-supply/#126-trace-supply">12.6h</a>).</li>
+<li>Supply drops never need prior planning
+nor do they have any phase
+restrictions.</li>
+</ul>
+<p><strong>14.10c Cancellation and Delay.</strong> All
+or part of a Drop Plan can be cancelled
+or delayed. (Some units could drop as
+scheduled, some be delayed, and some
+cancelled.) Make this decision during
+any Aircraft Refit Phase. If delayed, the
+exact same drop is now pushed back
+to the next turn. If cancelled, the plan
+ceases to exist (and even if the same plan
+is drawn up in the future, planning must
+start from scratch).</p>
+<p><strong>14.10d Air Drop Procedure.</strong> Resolve
+Flak and then check for losses using
+the Air Transport Success Table. Roll
+two dice for each combat unit or 1T
+of supply separately, based on the type
+of terrain in the mission hex and drop
+method (glider or paradrop). Apply the
+table’s modifiers. If the roll is successful,
+the unit is placed in the drop hex (and
+its movement is finished for the phase).
+Otherwise, it is destroyed. Also destroy
+any cargo that attempts to land <strong>on</strong> an
+enemy combat unit (but if the hex only
+contains enemy non-combat units, apply
+relevant parts of rule <a href="../9-0-ground-combat/#914-specialized-combats">9.14</a>.</p>
+<p><strong>14.10e Gliders.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/gliders-14.10e.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Gliders increase the
+capacity of Transport aircraft.
+Gliders do not count against
+mission and basing limits and
+are always considered Active.
+Gliders are generic “change” that can
+combine and break down like SP.</p>
+<ul>
+<li><strong>A)</strong> It costs one Eq to build two Glider
+Points (as if rebuilding aircraft).
+Gliders cannot be built in games
+where they are not provided. A
+glider cannot be reused—place it
+in the Dead Pile after use.</li>
+<li><strong>B)</strong> Gliders can only move when they
+are part of an Air Transport or Air
+Drop mission. When an air base
+is captured, gliders are destroyed.</li>
+<li><strong>C)</strong> A full-strength Transport plane
+(any capacity) can tow one Glider
+Point. The capacity of a Transport/Glider 
+combination is 2T (all
+of which is loaded on the glider). A
+Transport that doubles its capacity
+(per <a href="#149-air-transport">14.9e</a>) can carry 4T if two
+Glider Points are used, or alternatively 
+it can carry 2T on one
+Glider Point and carry its printed
+capacity for a paradrop.</li>
+<li><strong>D)</strong> In Air Transport missions, cargo
+on gliders is not counted against
+off-loading limits (<a href="../15-0-air-bases/">15.0b</a>).</li>
+<li><strong>E)</strong> In Air Drop missions, cargo on
+gliders has an increased chance
+for success, as shown on the Air
+Transport Success Table.</li>
+<li><strong>F)</strong> Gliders do not check for Flak, but
+their tow aircraft do. The capacity
+of the Transport/Glider combination 
+is reduced to 1T if the towing
+aircraft takes a loss. Handle losses
+to cargo per <a href="#144-flak">14.4g</a>.</li>
+<li><strong>G)</strong> Gliders do not take part in Air
+Combat. While being towed, a
+loss is handled per <a href="#144-flak">14.4g</a>.</li>
+</ul>
+<p><strong>14.10f Integral Gliders.</strong> As opposed
+to the separate counter version above,
+some games have Transport planes that
+contain a glider component as part of
+the counter itself. Basically, these are
+special Transports with an improved
+transport capacity because they <strong>always</strong>
+tow gliders (which make them <strong>exempt</strong>
+from base unloading limitations). Rule
+<a href="#149-air-transport">14.9e</a> modifies their capacity by range.</p>
+<p><em><strong>Specific Game Note:</strong> The CASE BLUE
+transports with Integral Gliders can only
+perform Air Transport and Base Transfer
+missions (never Air Drop missions).</em></p>
+<h2 id="1411-base-transfer">14.11 Base Transfer</h2>
+<p>A Base Transfer is a simple way to move
+an aircraft from one base to another
+without performing any other functions.
+Air units can <strong>double</strong> their range when
+moving from base to base.
+When a Fighter unit performs a Base
+Transfer <strong>within</strong> normal range, it stays
+Active. Otherwise, it goes Inactive (as
+do all other plane types making Base
+Transfers).</p>
+<p><em><strong>Play Note:</strong> Players may find that aborting
+after a mission is often a more useful way
+to change base, since then the aircraft can
+“do something” along the way.)</em></p>
+<p><em><strong>Complex Aircraft Mission Example:</strong>
+During his Movement Phase’s Barrage
+Segment, the Allied player tries a Barrage
+on an Axis stack with a Reserve marker
+showing. The strike consists of a Blenheim
+V bomber and two Hurricane II fighters.
+The mission hex is inside the Patrol Zone.
+The mission has a +2 Flak Mod operating
+against it (+1 for a Patrol Zone (since a
+Fighter is present), +1 for three mission
+aircraft).</em></p>
+<p><em>First, the Axis player resolves Flak against
+the mission. He chooses to avoid literally
+intercepting and forcing an actual Air
+Combat. The Axis player rolls two dice
+and gets a 10 which is modified to 12
+resulting in a loss. The Allied player uses
+the Mission Loss Table to randomly select
+one of his aircraft to take the loss and it
+is the Blenheim. It is reduced and the
+mission continues.</em></p>
+<p><em>The Allied player now totals the Barrage
+Strength of the three mission aircraft. The
+Fighters are worth a combined 6 Barrage
+Points. The now reduced bomber adds 3
+more, for a total of 9 points. The initial
+Barrage Table column is 8-11. There is
+no barrage supply cost since this is an Air
+Barrage. No Allied combat unit is adjacent
+to the target (no spotter: three columns left)
+and it turns out there are 4 RE in the hex
+(one shift right). No further column shifts
+apply. The total Barrage Table shift is two
+left, to the 3-4 column. The Allied player
+rolls two dice and gets a 12, giving a 1/2
+result. He then rolls a 5 with one die, so it
+“rounds up.” The Axis player must remove
+one step of his choice and the mode of the
+stack is changed from Reserve to DG. The
+Allied aircraft now return to any friendly
+base within range.</em></p>
+<br>
+<h2 id="example-air-barrage-missions">Example: Air Barrage Missions</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/example-air-barrage.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<br>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/rules/ocs-4.3/13-0-specialized-units/" rel="next">13.0 Specialized Units</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/rules/ocs-4.3/15-0-air-bases/" rel="prev">15.0 Air Bases</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Aug 9, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <meta name="robots" content="noarchive">
+
+  
+  <p class="powered-by">
+    <a href="/license/">LICENSE: CC-BY-NC <br> <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-nc fa-2x"></i> </a><br>
+  </p>
+  
+
+  <p class="powered-by">
+    © 2021 Eric Van Dornshuld   |
+    &nbsp; All rights reserved.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <script src="/en/js/wowchemy.min.2ddebf8e6b39a7ecfcd4b1fe8ad3a55a.js"></script>
+
+    
+
+
+</body>
+</html>

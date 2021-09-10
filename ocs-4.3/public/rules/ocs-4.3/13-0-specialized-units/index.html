@@ -1,0 +1,1921 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+    <meta name="google-site-verification" content="d3jrhKJk5FLjODpHv5yEgLpQ_2rDKZk_MEhSQyO1Dkw" />
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="13.1 HQ Units    HQs are special combat units that can distribute supplies, rebuild units, and perform engineering tasks. HQs are 1 RE in size, regardless of what is on the unit designation." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/13-0-specialized-units/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1a4ac5a75a46a9065d654e5c418374b5.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131839893-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-131839893-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/13-0-specialized-units/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="OCS Series Rules, 4.3" />
+  <meta property="og:url" content="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/13-0-specialized-units/" />
+  <meta property="og:title" content="13.0 Specialized Units | OCS Series Rules, 4.3" />
+  <meta property="og:description" content="13.1 HQ Units    HQs are special combat units that can distribute supplies, rebuild units, and perform engineering tasks. HQs are 1 RE in size, regardless of what is on the unit designation." /><meta property="og:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-08-09T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-08-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>13.0 Specialized Units | OCS Series Rules, 4.3</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0eab2e7f01e309015443d99413293847" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/rules/ocs-4.3"><span>OCS 4.3 Rules</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          OCS Series Rules, 4.3
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/rules/"><i class="fas fa-arrow-left pr-1"></i>Rules</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/rules/ocs-4.3/">OCS Series Rules, 4.3</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/rules/ocs-4.3/1-0-scale/">1.0 Scale</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/2-0-sequence-of-play/">2.0 Sequence of Play</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/3-0-units-and-markers/">3.0 Units and Markers</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/4-0-general-concepts/">4.0 General Concepts</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/5-0-modes/">5.0 Modes</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/6-0-ground-movement/">6.0 Ground Movement</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/7-0-reaction-phase/">7.0 Reaction Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/8-0-overrun/">8.0 Overrun</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/9-0-ground-combat/">9.0 Ground Combat</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/10-0-barrage/">10.0 Barrage</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/11-0-exploitation-phase/">11.0 Exploitation Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/12-0-supply/">12.0 Supply</a></li>
+
+
+
+  <li class="active"><a href="/rules/ocs-4.3/13-0-specialized-units/">13.0 Specialized Units</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/14-0-air-power/">14.0 Air Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/15-0-air-bases/">15.0 Air Bases</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/16-0-hedgehogs/">16.0 Hedgehogs</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/17-0-weather/">17.0 Weather</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/18-0-naval-power/">18.0 Naval Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/19-0-ports-and-shipping/">19.0 Ports and Shipping</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/20-0-breakdowns/">20.0 Breakdowns</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/21-0-optional-rules/">21.0 Optional Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/house-rules/">House Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/terms-and-definitions/">Terms and Definitions</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/summaries/">Summaries</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#131-hq-units">13.1 HQ Units</a></li>
+    <li><a href="#132-transport-points">13.2 Transport Points</a></li>
+    <li><a href="#133-railroads">13.3 Railroads</a></li>
+    <li><a href="#134-artillery-units">13.4 Artillery Units</a></li>
+    <li><a href="#135-replacement-units">13.5 Replacement Units</a></li>
+    <li><a href="#136-reinforcements">13.6 Reinforcements</a></li>
+    <li><a href="#137-formation-markers">13.7 Formation Markers</a></li>
+    <li><a href="#138-engineer-functions">13.8 Engineer Functions</a></li>
+    <li><a href="#139-unit-consolidation">13.9 Unit Consolidation</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/">
+      
+        Rules
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/ocs-4.3/">
+      
+        OCS Series Rules, 4.3
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        13.0 Specialized Units
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>13.0 Specialized Units</h1>
+
+          <div class="article-style">
+            <hr>
+<h2 id="131-hq-units">13.1 HQ Units</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/hq-units-13.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>HQs are special combat units
+that can distribute supplies,
+rebuild units, and perform
+engineering tasks. HQs are 1
+RE in size, regardless of what is on the
+unit designation.</p>
+<p><strong>13.1a HQs and Modes.</strong> The Combat
+Mode side of an HQ has the greater
+throw range. DG Mode (<a href="../5-0-modes/#510-disorganized-mode-dg">5.10e</a>) does not
+affect an HQ’s special functions (<a href="#131-hq-units">13.1b</a>).
+An HQ’s defense strength is determined
+by mode (per <a href="#131-hq-units">13.1c</a>). An HQ in Strat
+Mode cannot throw supply (<a href="../5-0-modes/#58-strat-mode">5.8b</a>).</p>
+<p><em><strong>Design Note:</strong> Combat Mode represents
+an HQ having taken up residence; Move
+Mode shows an HQ with a more mobile
+status. When in Move Mode, the extra
+trucks of the HQ are considered to be
+shuttling around mechanics and bakers
+instead of supplies.</em></p>
+<p><strong>13.1b HQ Special Functions.</strong></p>
+<ul>
+<li>An HQ can “throw” SP and trace
+supply to combat units within its
+throw range (<a href="../12-0-supply/#123-on-map-supply">12.3b</a>).</li>
+<li>An HQ can rebuild units (<a href="../13-0-specialized-units/#135-replacement-units">13.5a</a>).</li>
+<li>An Engineer-Capable HQ (<a href="../13-0-specialized-units/#138-engineer-functions">13.8a</a>)
+can perform special functions such
+as bridging, detrainable creation,
+and construction.</li>
+</ul>
+<p><strong>13.1c HQs and Combat.</strong> HQs have
+some ratings that are not printed on
+the counters. Their Action Rating is 0.
+In Combat Mode, they have a parenthesized 
+(defensive-only) strength of 5,
+and in Move Mode this is reduced to 1.</p>
+<p>HQs need supply like any other combat
+unit. They must change to Move Mode
+when forced to retreat.</p>
+<p><strong>13.1d Special HQs.</strong> Games can have
+HQs of multiple nationalities and/or
+command levels. HQs are normally able
+to throw supply to all friendly ground
+units, without regard to historical chain
+of command, but there may be limita-
+tions in specific games. One exception
+is series-wide: Divisional HQs can only
+provide supply to their <strong>own</strong> division’s
+units or to independent units (defined
+in <a href="../3-0-units-and-markers/#32-combat-units">3.2f</a>) of the same nationality.</p>
+<h2 id="132-transport-points">13.2 Transport Points</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/transport-points-13.2.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Transport Points move SPs
+across the map. Specialized
+Combats involving these are
+covered in <a href="../9-0-ground-combat/#914-specialized-combats">9.14c</a>.</p>
+<p><strong>13.2a Sequencing Transport/Supply.</strong>
+A Transport Point can move, pause to
+use some of its load, and then continue
+moving. While “pausing” the carried SP
+can be used to pay for all kinds of fueling
+and construction/repair. There are two
+important restrictions: the Transport
+Point must finish moving before another
+unit is moved, and upcoming combat/
+barrage costs can never be pre-paid in
+this fashion. SP need not be unloaded
+from a Transport Point before being
+used.</p>
+<p><strong>13.2b Transport Points and Supply.</strong>
+Transport Points never need fuel and
+are never Out of Supply.</p>
+<p><strong>13.2c Mechanical Handling.</strong> Transport 
+Points can carry up to their size
+in SP. Transport Points can combine
+and divide within counter-mix limits.
+Dividing or combining does not cost
+MP, can only be done in the friendly
+Movement Phase and only if all of the
+involved Transport Points are in one
+hex. The combined/divided Transport
+Points can continue to move, but must
+conform to the limitation imposed by
+<a href="../6-0-ground-movement/#61-how-to-move-ground-units">6.1f</a> 
+(but see <a href="../12-0-supply/#127-extenders">12.7e</a> and <a href="../12-0-supply/#127-extenders">12.7f</a> for some
+liberties given to Extenders). Different
+types of Transport Points can never be
+combined into a single counter, and
+this restriction includes Organic Trucks,
+which cannot combine with or divide
+into regular Trucks. (<strong>Exception</strong>: Unit
+Consolidation can be used to convert a
+regular Truck into an Organic Truck,
+per <a href="#139-unit-consolidation.">13.9</a></p>
+<p><strong>13.2d Mode Restrictions.</strong> Transport
+Points are in Move Mode at all times
+(never Combat, Strat, Reserve, DG, or
+Exploit). (<strong>Exception</strong>: Organic Trucks
+can enter Reserve Mode, per <a href="#132-transport-points">13.2g</a>.)</p>
+<p><strong>13.2e</strong> A Transport Point can be shipped
+by sea or rail, but not by air. (<strong>Exception</strong>:
+Mules, found in some games, <strong>can</strong> be
+shipped via Air Transport.) The shipping
+cost is always equal to the size of the
+Transport Point, which can be transported 
+<strong>while loaded with SP</strong> for the
+same shipping cost.</p>
+<p><strong>13.2f Loading and Unloading.</strong> Place
+loaded SP <strong>under</strong> the Transport Points
+carrying them, and unloaded SP <strong>above</strong>
+any Transport Points in the stack. A
+Transport Point cannot be loaded via
+direct-draw or via thrown SP—it must
+be in the same hex as the dump. Note
+SP can (in effect) be unloaded by direct-
+draw as its load is used by nearby units
+and HQs.</p>
+<p><strong>Loading Requirements:</strong> A Transport
+Point can load in any hex.</p>
+<p><strong>Unloading Requirements:</strong> A Transport
+Point can only unload in a hex which
+contains a friendly combat unit, port, air
+base, or existing unloaded supply dump.</p>
+<p><strong>Costs:</strong> A Transport Point pays 10%
+of its printed MA to load/unload any
+number of SP in a hex. Round the cost
+normally (so a truck with 45 MA must
+pay 5 MP to load or unload SP).</p>
+<p><strong>13.2g Organic Trucks.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/organic-trucks-13.2g.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>A multi-unit
+formation sometimes is given
+special, attached Transport
+Points. An Organic Truck is
+handled like other Transport
+Points, with several exceptions. Organic
+Trucks&hellip;</p>
+<ul>
+<li><strong>A)</strong> can <strong>never</strong> unload their SP on the
+map,</li>
+<li><strong>B)</strong> only allow units of the same multi-unit 
+formation to draw their SP,</li>
+<li><strong>C)</strong> can never be combined to form
+Extenders,</li>
+<li><strong>D)</strong> can be put into Reserve Mode (if
+their hex gets a DG result, remove
+the Reserve marker),</li>
+<li><strong>E)</strong> can tag along with other retreating
+combat units in their stack (but
+cannot retreat alone),</li>
+<li><strong>F)</strong> convert when captured into regular
+Transport Points, and</li>
+<li><strong>G)</strong> can withhold combat supply (see
+<a href="../12-0-supply/#1210-internal-stocks">12.10a</a>).</li>
+</ul>
+<p>Players can use HQs to throw supply
+from Organic Trucks to units of <strong>that</strong>
+formation.</p>
+<p><strong>13.2h Full Notation.</strong> Some games have
+Transport Points that have an “F” in
+a yellow box on one side and no such
+notation on the back. The “F” denotes
+that the Transport Point is full, while
+the other side shows it is empty (use
+the empty side plus some tokens for a
+partially loaded Transport Point).</p>
+<p><strong>13.2i</strong> Transport Points that are captured
+(see <a href="../9-0-ground-combat/#914-specialized-combats">9.14c</a>) in the Movement Phase can
+move immediately. If captured in any
+other phase, no movement is allowed
+until the capturing side’s next Move-
+ment Phase.</p>
+<h2 id="133-railroads">13.3 Railroads</h2>
+<p>Railroads are vital for the movement of
+reinforcements and SP, and are often
+integral to trace supply. There are usually
+two types of railroad hexes, multi-track
+and single-track. Some games also have
+tracks of differing gauges (see <a href="../13-0-specialized-units/#133-railroads">13.3f</a>).</p>
+<p><strong>13.3a</strong> Combat units, Transport Points,
+and SP can be moved using Rail Cap
+(13.3b). These are the only rail cargo
+allowed—never aircraft, ships, hedge-
+hogs, etc. See <a href="../4-0-general-concepts/#47-transportation-equivalents">4.7</a> for the Transportation
+Equivalents of various cargo. Each Rail
+Cap point can transport <strong>one</strong> SP or RE
+any distance by rail movement. There
+are two possible modifications:</p>
+<ul>
+<li>If cargo is moved along a path that
+includes one or more Trainbusting
+zones, <strong>double</strong> the Rail Cap cost.</li>
+<li>If cargo is moved along a path that is
+entirely multi-track rail hexes, <strong>halve</strong>
+the normal Rail Cap cost.</li>
+</ul>
+<p><strong>13.3b</strong> Rail Cap is available every turn
+at levels specified by the scenario rules.
+It cannot be “saved” for use in another
+Movement Phase. <strong>Rail Cap can only
+be used in the Movement Phase</strong> (never
+during Reaction or Exploitation).</p>
+<p><strong>13.3c Detrainable Hexes.</strong> A railroad
+hex is detrainable if it meets <strong>all</strong> of these
+requirements:</p>
+<ul>
+<li>It has a village, city (any size), port,
+or Engineer-Capable HQ (<a href="#138-engineer-functions">13.8a</a>).</li>
+<li>It is under control (<a href="#133-railroads">13.3h</a>).</li>
+<li>It has a rail path free of enemy ZOC
+back to a supply source. Extender
+links can be part of this for trace
+supply, but not for moving cargo.
+Note EZOC <strong>cannot</strong> be negated to
+move cargo, but <strong>can</strong> to connect with
+a supply source.</li>
+</ul>
+<p><strong>13.3d Railheads.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/railheads-13.3d.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Some games limit
+each side’s railroad usage to
+a certain gauge (or width) of
+track (<a href="#133-railroads">13.3f</a>). Show a divide
+between gauges on the map
+(as in “German gauge runs to here”)
+with Railhead markers. (The flip-sides
+are marked Wrong Gauge to help mark
+complex junctions.) These markers are
+<strong>only</strong> moved by the conversion work of
+Rail Repair units— other ground units
+moving through rail hexes have no effect
+on the position of a Railhead.</p>
+<p>Some games have only one gauge of
+railroad track. In these, players can use
+Railhead markers to show the forward
+extent of rail hexes under their control.
+(The initial extent of each side’s rail lines
+is sometimes given in the scenario rules,
+but keep in mind that <a href="#133-railroads">13.3h</a> usually
+makes railheads unnecessary.)</p>
+<p><strong>13.3e</strong> Rail movement includes three
+steps: entrain, move, detrain. All three
+steps must be done in the same phase.</p>
+<ul>
+<li><strong>1)</strong> To entrain, the cargo must be in
+a detrainable railroad hex (<a href="#133-railroads">13.3c</a>)
+that is not in an enemy ZOC. A
+unit moving by rail must be in
+Move Mode, and can expend up
+to half its MA in the phase <strong>before</strong>
+entraining. Reinforcements and
+new SP can entrain “off-map” if
+their arrival hex contains a railroad
+(<a href="#136-reinforcements">13.6b</a>).</li>
+<li><strong>2)</strong> To move, the cargo follows a path
+of connected rail hexes that does
+not enter a hex with an enemy
+combat unit or ZOC. Rail hexes
+that are wrong gauge (<a href="#133-railroads">13.3f</a>) or
+uncontrolled (<a href="#133-railroads">13.3h</a>) cannot be
+used.</li>
+<li><strong>3)</strong> To detrain, cargo must be in a
+detrainable railroad hex which is
+not in an enemy ZOC. No further
+movement is allowed by a unit
+after it detrains (per <a href="../4-0-general-concepts/#47-transportation-equivalents">4.7d</a>).</li>
+</ul>
+<p><em><strong>Design Note:</strong> Rail capacity involves the
+marshaling of rolling stock and a lot of
+time spent loading and unloading. Rail
+movement is a strategic asset; it is much
+more efficient to move loads across long
+distances rather than in short hops.</em></p>
+<p><strong>13.3f Rail Conversion.</strong> In games with
+more than one rail gauge, a side can only
+use its rail capacity or supply line trace
+along rail lines of a particular gauge.
+Eligible Rail Repair units (<a href="#133-railroads">13.3g</a>) are
+used to convert rail lines to the gauge
+appropriate to their side. Players keep
+track of the current extent of each rail
+gauge using Railhead markers.</p>
+<ul>
+<li><strong>A)</strong> Railroads cannot be converted in
+an enemy ZOC (no negation).</li>
+<li><strong>B)</strong> A Rail Repair unit can convert a
+rail hex simply by moving into it.
+Conversion <strong>does not</strong> cost SP or
+extra movement points.</li>
+</ul>
+<p><strong>13.3g Rail Repair Units.</strong> Rail Repair
+units are combat units that are used to
+convert railroad hexes. Several special
+rules govern them:</p>
+<ul>
+<li><strong>A)</strong> A Rail Repair unit can combine
+rail movement with conversion in
+the Movement Phase. (<strong>Exception:</strong>
+They <strong>cannot</strong> do so if the hexes
+being used for rail movement were
+converted in the current phase. No
+leapfrogging!)</li>
+<li><strong>B)</strong> Rail Repair units can move their
+full MA <strong>after</strong> using rail movement
+(less any movement done prior
+to entraining), and can use rail
+movement in Combat Mode.</li>
+<li><strong>C)</strong> Rail Repair units can entrain and
+detrain in any railroad hex (it need
+not be “detrainable”).</li>
+<li><strong>D)</strong> Rail Repair units can convert up
+to 4 hexes (or hexes equal their
+current MA, if less than 4) during
+the Movement Phase (not other
+phases). They must be in Combat
+Mode, or be in DG Mode and
+oriented toward Combat Mode
+(per <a href="../5-0-modes/#510-disorganized-mode-dg">5.10e</a>).</li>
+</ul>
+<p><em><strong>Play Note:</strong> Conversion is not restricted
+to merely pushing forward the railhead
+marking where standard and wide gauges
+meet; Rail Repair units can, for example,
+use Strat Mode to get ahead of the normal
+re-gauging to start working on a forward
+section of track. “No leapfrogging” is a
+narrow restriction on not having a second
+repair unit use rail movement on newly
+converted track to extend the Railhead.</em></p>
+<p><strong>13.3h Railroad Control.</strong> Players can
+only trace “rail paths” (<a href="#133-railroads">13.3c</a>) into or
+through <strong>detrainable hexes</strong> they control.
+Initial control is based on the front line
+(use common sense). Control changes
+when an enemy combat unit enters the
+hex, or when the hex is now on the
+enemy side of the front line (this needs
+to be <strong>clearly</strong> the case; when there is any
+doubt do not change control).</p>
+<p>Note that gauge, enemy units, and ZOC
+will further limit whether a rail path can
+actually be used for trace supply or rail
+transport.</p>
+<p><em><strong>Play Note:</strong> This supersedes all previous
+game-specific Railroad Control rules. There
+is no longer a need to move units through
+every rail hex — control of detrainable
+hexes is now the sole concern.</em></p>
+<h2 id="134-artillery-units">13.4 Artillery Units</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/artillery-units-13.4.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Artillery units attack targets
+within range using Barrage.
+Barrage Strength is shown in
+a yellow box (on the lower
+left of the counter); range is printed
+below the Action Rating. The Combat
+Mode side of an artillery unit is the
+one with the greater Barrage Strength.
+Artillery units can move and fire in the
+same phase.</p>
+<p>See <a href="../10-0-barrage/">10.0</a>for barrage rules.</p>
+<p><strong>13.4a</strong> Artillery in Reserve or Strat Mode
+<strong>cannot</strong> barrage. Otherwise, artillery can
+barrage in any Barrage Segment in which
+they are eligible to act, given the needed
+supply is paid.</p>
+<p><strong>13.4b Artillery and Combat.</strong> Artillery
+units all have a parenthesized (defensive-
+only) strength of 1 in both Combat or
+Move Mode. This number is <strong>not</strong> printed
+on the counters.</p>
+<h2 id="135-replacement-units">13.5 Replacement Units</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/replacement-units-13.5.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Players roll on their Variable
+Replacement Table during
+each of their Reinforcement
+Phases. Replacements (Repls)
+acquired by this roll are additions to the
+turn’s regular Reinforcements. Repls
+can be used as soon as they arrive or be
+saved for later. They come in two types:
+Equipment (Eq) and Personnel (Pax).
+These are used to rebuild lost steps or
+units. Repl counters are not intention-
+ally limited by the counter-mix, and
+as with SP both players share the same
+generic counters so must take care to
+remember who owns which.</p>
+<p>Repls can <strong>never</strong> enter Combat Mode,
+but can enter all other modes. They are
+1/4 RE for stacking. Repls are Attack-
+Capable and can be used to take combat
+or barrage losses. Repls are independent
+combat units and must be supplied and
+fueled normally.</p>
+<p><strong>13.5a Replacing Losses.</strong> A Repl used to
+replace losses must be in Move Mode.
+Rebuilding costs vary by unit type and
+size, and are summarized on each game’s
+Rebuild Table. There are two general
+kinds of rebuild possible during every
+Reinforcement Phase.</p>
+<ul>
+<li><strong>1)</strong> To rebuild a unit in the Dead Pile,
+the required Repls must be in a
+single hex at or within 2 hexes of
+a friendly HQ. The HQ must be
+in Combat Mode, or else be in
+DG Mode and oriented toward
+Combat Mode (per <a href="../5-0-modes/#510-disorganized-mode-dg">5.10e</a>). The
+hex may not be in an enemy ZOC
+(<a href="../4-0-general-concepts/#45-zone-of-control">4.5a</a>). Remove the required Repls
+and put the rebuilt unit in the hex.</li>
+<li><strong>2)</strong> To rebuild an on-map unit that
+has taken step losses, follow the
+above procedure. In addition, the
+unit being rebuilt must be stacked
+with the Repls being used.</li>
+</ul>
+<p><strong>13.5b</strong> A reduced or eliminated multi-
+step unit can have any number of steps
+rebuilt in a turn (given required Repls).
+Its supply status and mode have no effect
+on rebuilding. Rebuilding does not cost
+MP; place a newly-rebuilt unit in any
+voluntary mode. Generally, only units in
+the Dead Pile and on-map reduced units
+can be rebuilt. Generics like Breakdown
+units <strong>cannot</strong> usually be rebuilt (they are
+returned to the pool when destroyed).</p>
+<p><em><strong>Play Note:</strong> We have found it wise to set
+up a “training detachment” at a rear area
+base. Use a “not-so-good” HQ for this, and
+station incoming Repls adjacent to it. This
+simplifies the problem of having to hunt
+down Repls when you need them.</em></p>
+<p><strong>13.5c No-Rebuild Units.</strong> Units with a
+Yellow dot behind their AR cannot be
+rebuilt and are removed permanently
+when destroyed.</p>
+<p><strong>13.5d One Repl for Two Units.</strong> Some
+very small units (which are listed on the
+Rebuild Table) can be rebuilt in pairs
+for only one Repl. If only one such unit
+is available in the Dead Pile, one Repl
+must still be expended.</p>
+<p><strong>13.5e Truck Rebuilds.</strong> Trucks (Organic
+or regular) can be rebuilt at a cost of
+1x Eq per truck. Only trucks that have
+been destroyed (or captured) by enemy
+action can be rebuilt in this way, so the
+player can never have more trucks in
+play than the scenario provides him.
+Other Transport Point types (such as
+wagons and mules) <strong>cannot</strong> be rebuilt
+in this way.</p>
+<p><strong>13.5f Air Replacements.</strong> Some games
+have tables that provide direct aircraft
+step replacement. In games with no such
+result available, players can use Eq to
+replace air losses. Each Eq can rebuild
+<strong>two</strong> aircraft steps. Expend the Eq at an
+HQ and follow the normal rules with
+this addition to <a href="#135-replacement-units">13.5a</a>: Air units can be
+rebuilt at any friendly air base (it need
+not be near the HQ) and arrive Active
+from the Dead Pile.</p>
+<ul>
+<li>An aircraft can be rebuilt regardless
+of flight conditions.</li>
+<li>An Eq cannot be “partially” used to
+rebuild air units (<a href="#135-replacement-units">13.5d</a>).</li>
+</ul>
+<h2 id="136-reinforcements">13.6 Reinforcements</h2>
+<p>Reinforcements are new units entering
+the game via the Arrival Chart or the
+Variable Reinforcement Table. They
+are placed in their entry hexes during
+the friendly Reinforcement Phase. The
+player <strong>cannot</strong> delay the entry of reinforcements, 
+so “forgotten” units never
+arrive unless your opponent is very nice.
+Reinforcing aircraft arrive Active on any
+friendly Air Base.</p>
+<p><strong>13.6a</strong> Placement of reinforcements at
+a port (which cannot be in an enemy
+ZOC) is limited to its current capacity.
+Ground units can be overstacked when
+placed; aircraft arrivals must conform to
+normal stacking rules (<a href="../14-0-air-power/#142-aircraft-movement">14.2a</a> and <a href="../18-0-naval-power/#182-aircraft-carriers">18.2a</a>).</p>
+<p><strong>13.6b</strong> Reinforcements can enter in any
+voluntary mode. They can be placed in
+hexes in an enemy ZOC (but note the
+Port restriction in <a href="#136-reinforcements">13.6a</a>), and can arrive
+by rail (ignoring the usual “entraining”
+requirements of <a href="#133-railroads">13.3e</a>). If a map-edge
+arrival hex is blocked by enemy units,
+the reinforcements can be placed in the
+nearest unblocked map-edge hex.</p>
+<p><strong>13.6c</strong> Organic Trucks <strong>arrive</strong> loaded.
+Other Transport Points arrive loaded
+only if SP are arriving at the same location that turn.</p>
+<h2 id="137-formation-markers">13.7 Formation Markers</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/formation-markers-13.7.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Each multi-unit formation
+has a marker that can be used
+to show the location of one
+or more of the formation’s
+units. Remove the actual units from the
+map, and keep them anywhere convenient. 
+This helps to reduce some of the
+map’s counter density and tall stacks.</p>
+<p><strong>Unless using option <a href="#137-formation-markers">13.7b</a>, players
+should take pains not to use these
+markers to “hide” formations from
+one another.</strong></p>
+<p><strong>Usage notes:</strong></p>
+<ul>
+<li><strong>A)</strong> At least one of the Formation’s
+units must be stacked with the
+marker or the marker cannot be
+on the map (except as a reminder
+of Fueling). So “empties” cannot
+be used as dummy formations.</li>
+<li><strong>B)</strong> A Formation marker can only be
+used to represent a stack of <strong>that</strong>
+formation’s units. The units move
+and fight normally; the marker just
+shows their location. Units can
+freely move into the marker (and
+for convenience be kept off the
+map), or from the marker be put
+back on the map, at no additional
+MP cost. Eligible units that stack
+with a Formation marker are not
+required to enter it (and be pulled
+off the map).</li>
+<li><strong>C)</strong> Units represented by a Formation
+marker can be in different modes
+and supply states. The required
+markers can be put off-map with
+the units or on-map in the Formation 
+marker’s hex (whichever is
+easiest). If some units in a hex are
+in the same mode as some units
+in the Formation marker, a single
+marker can usually be used for
+all. Just remember to think of the
+off-map units as stacked where the
+Formation marker is located.</li>
+<li><strong>D)</strong> Formation markers have regular
+and fueled sides. Players must use
+the fueled side when the “forma-
+tion” method of fuel cost is paid
+(see <a href="../12-0-supply/#125-fuel-supply">12.5c</a>).</li>
+</ul>
+<p><strong>13.7a Supply Concerns.</strong> Combat units
+in a multi-unit formation must receive
+trace and fuel supply from the same HQ
+or the same direct-draw source. If this
+is not possible:</p>
+<ul>
+<li>For trace supply, one part of the
+formation can trace “for free” while
+the rest must “eat SP” or become
+Out of Supply (per <a href="../12-0-supply/#126-trace-supply">12.6d</a>).</li>
+<li>For fueling, part of the formation
+can use the “formation” method,
+but the remainder will need to use
+the “single-unit” method. See <a href="../12-0-supply/#125-fuel-supply">12.5c</a>.</li>
+</ul>
+<p><strong>13.7b Fog of War Option.</strong> If players
+agree, the Formation markers can be
+used to heighten the fog of war. Players
+are allowed to “hide” a tank corps or
+panzer division by putting its Formation
+marker under other combat units in a
+stack. Any such trickery must conform
+to <a href="../4-0-general-concepts/#48-stacking">4.8b</a> and <a href="../4-0-general-concepts/#49-fog-of-war">4.9a</a>—the Formation needs
+to be on top if it contains the stack’s
+only ground units with a ZOC (and
+one of its units needs to be revealed).</p>
+<h2 id="138-engineer-functions">13.8 Engineer Functions</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/engineer-functions-13.8.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>HQs and Engineers are the
+<strong>only</strong> units that can perform
+engineer functions (bridging,
+construction, and creation of
+detrainable hexes). Related unit types—
+such as Rail Repair, Assault Engineers,
+Pioneers, and Para/Glider Engineers—
+<strong>cannot</strong> perform the tasks listed in this
+section.</p>
+<p><strong>13.8a Engineer-Capable.</strong> For it to be
+considered Engineer-Capable, an HQ
+or Engineer must be in <strong>Combat Mode</strong>,
+or else be in DG Mode and oriented
+toward Combat Mode (per <a href="../5-0-modes/#510-disorganized-mode-dg">5.10e</a>).</p>
+<p><strong>13.8b Bridging.</strong> When <strong>adjacent</strong> to a
+Major River, an Engineer-Capable unit
+automatically reduces the MP cost of
+Major River hexsides to that of Minor
+River hexsides. Likewise, an Engineer-
+Capable unit downgrades Minor River
+hexsides to “no additional cost.” There is
+no SP cost. Only friendly units moving
+into or out of the Engineer-Capable
+unit’s hex benefit from these reduced
+movement costs. Apply bridging effects
+to frozen rivers as appropriate.</p>
+<p>Attacking units <strong>cannot</strong> use the bridging
+function to cross a hexside to <strong>overrun</strong>
+across a river. Bridging has no effect on
+combat terrain modifiers, but can enable
+an attack where none would be possible
+without a bridge.</p>
+<p>Bridging will disappear the instant a unit
+is no longer Engineer-Capable. (<strong>Exception:</strong>
+An Engineer-Capable unit can
+use its own bridge to leave the hex after
+losing its Engineer-Capable status by
+changing mode or orientation.)</p>
+<p><strong>13.8c Detrainable Creation.</strong> This is
+a special ability of HQ units only, not
+other engineers. When an Engineer-Capable 
+HQ occupies a functioning
+railroad hex it automatically makes the
+hex detrainable (<a href="#133-railroads">13.3c</a>). There is no SP
+cost.</p>
+<p>This special detrainable status disappears 
+the instant a mode change makes
+the HQ no longer Engineer-Capable.
+(<strong>Exception:</strong> An Engineer-Capable HQ
+can entrain itself before switching to
+Move Mode.)</p>
+<p><strong>13.8d Construction.</strong> In the Movement
+Phase (only), an Engineer-Capable unit
+can perform construction within a 2-hex
+radius (enemy ZOC are ignored, and
+terrain affects this path as if using Leg
+MP). Tasks are build/improve/reduce an
+Air Base (<a href="../15-0-air-bases/#153-building-air-bases">15.3</a>) or Hedgehog (<a href="../16-0-hedgehogs/">16.0b</a>),
+and repair/damage a Port (<a href="../19-0-ports-and-shipping/">19.0d</a>). An
+Engineer-Capable unit cannot move in
+the phase it performs construction.</p>
+<p>Construction limits and notes:</p>
+<ul>
+<li>An Engineer-Capable unit can only
+perform construction in a single hex,
+and can only perform one type of
+construction.</li>
+<li>All of the build/improve/repair tasks
+have an SP cost. The reduce/damage
+tasks are free of cost.</li>
+<li>Construction is immediate, so for
+instance a new airfield can be used
+in the same phase it is built.</li>
+</ul>
+<p><em><strong>Design Note:</strong> A large portion of engineer
+capability is tied to HQ units. In real
+life, these engineers typically spend most
+of their time doing their assigned tasks. In
+games, all too frequently, they end up as
+poor excuses for infantry units and their
+original task is forgotten. The idea here
+is to prevent such misuse by eliminating
+most non-combat engineer units from the
+counter-mix.</em></p>
+<h2 id="139-unit-consolidation">13.9 Unit Consolidation</h2>
+<p>A player can combine crippled formations 
+during his Reinforcement Phase.
+Units may be consolidated when adjacent 
+to enemy units and when Out of
+Supply. Ground units being exchanged/combined 
+must be <strong>identical</strong> on both
+sides of the counter, and a unit involved
+in a consolidation cannot have Low or
+Exhausted internal stocks, or be DG.
+There are four types of Consolidation:</p>
+<ul>
+<li><strong>1)</strong> To consolidate multi-step units,
+the two units must be in the same
+hex (or off-map box). Remove one
+of the units and change the step
+losses on the remaining unit to
+reflect the steps added to it. No
+unit can be rebuilt beyond full
+strength in this manner—excess
+steps would be lost.</li>
+<li><strong>2)</strong> To consolidate multi-unit formations, 
+the player can swap any unit
+(including an Organic Truck) for
+the equivalent unit of a different
+multi-unit formation that is in the
+Dead Pile. Modes and markers
+stay the same, and SP loaded on
+an Organic Truck remain loaded
+(which does allow the supply to
+be passed to the other division).</li>
+<li><strong>3)</strong> An independent unit (including
+regular Transport Points) can be
+made part of a multi-unit formation 
+(similar to #2 above), but a
+unit from a multi-unit formation
+can never be converted into an
+independent unit.</li>
+<li><strong>4)</strong> Two reduced aircraft of the same
+type, values, and status (Active or
+Inactive) can combine into a full
+strength aircraft if they are in the
+same hex (or off-map box). This
+can be done during any phase (not
+just the Reinforcement Phase).</li>
+</ul>
+<br>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/rules/ocs-4.3/12-0-supply/" rel="next">12.0 Supply</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/rules/ocs-4.3/14-0-air-power/" rel="prev">14.0 Air Power</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Aug 9, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <meta name="robots" content="noarchive">
+
+  
+  <p class="powered-by">
+    <a href="/license/">LICENSE: CC-BY-NC <br> <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-nc fa-2x"></i> </a><br>
+  </p>
+  
+
+  <p class="powered-by">
+    © 2021 Eric Van Dornshuld   |
+    &nbsp; All rights reserved.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <script src="/en/js/wowchemy.min.2ddebf8e6b39a7ecfcd4b1fe8ad3a55a.js"></script>
+
+    
+
+
+</body>
+</html>

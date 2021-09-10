@@ -1,0 +1,1286 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+    <meta name="google-site-verification" content="d3jrhKJk5FLjODpHv5yEgLpQ_2rDKZk_MEhSQyO1Dkw" />
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A &#34;translated-to-web&#34; ruleset" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1a4ac5a75a46a9065d654e5c418374b5.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131839893-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-131839893-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/rules/ocs-4.3/index.xml" type="application/rss+xml" title="OCS Series Rules, 4.3" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="OCS Series Rules, 4.3" />
+  <meta property="og:url" content="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/" />
+  <meta property="og:title" content="OCS Series Rules, 4.3 | OCS Series Rules, 4.3" />
+  <meta property="og:description" content="A &#34;translated-to-web&#34; ruleset" /><meta property="og:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2020-08-09T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <title>OCS Series Rules, 4.3 | OCS Series Rules, 4.3</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1f84d291fe959ef04f7a32eb65d865d3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/rules/ocs-4.3"><span>OCS 4.3 Rules</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Rules
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/rules/"><i class="fas fa-arrow-left pr-1"></i>Rules</a></li>
+      </ul>
+
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link  active" href="/rules/ocs-4.3/">OCS Series Rules, 4.3</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/rules/ocs-4.3/1-0-scale/">1.0 Scale</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/2-0-sequence-of-play/">2.0 Sequence of Play</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/3-0-units-and-markers/">3.0 Units and Markers</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/4-0-general-concepts/">4.0 General Concepts</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/5-0-modes/">5.0 Modes</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/6-0-ground-movement/">6.0 Ground Movement</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/7-0-reaction-phase/">7.0 Reaction Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/8-0-overrun/">8.0 Overrun</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/9-0-ground-combat/">9.0 Ground Combat</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/10-0-barrage/">10.0 Barrage</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/11-0-exploitation-phase/">11.0 Exploitation Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/12-0-supply/">12.0 Supply</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/13-0-specialized-units/">13.0 Specialized Units</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/14-0-air-power/">14.0 Air Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/15-0-air-bases/">15.0 Air Bases</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/16-0-hedgehogs/">16.0 Hedgehogs</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/17-0-weather/">17.0 Weather</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/18-0-naval-power/">18.0 Naval Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/19-0-ports-and-shipping/">19.0 Ports and Shipping</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/20-0-breakdowns/">20.0 Breakdowns</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/21-0-optional-rules/">21.0 Optional Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/house-rules/">House Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/terms-and-definitions/">Terms and Definitions</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/summaries/">Summaries</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#coypright">Coypright</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#downloads">Downloads</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#the-game-map">The Game Map</a>
+      <ul>
+        <li><a href="#the-hex-numbering-system">The Hex Numbering System.</a></li>
+        <li><a href="#map-edge-hexes">Map Edge Hexes.</a></li>
+        <li><a href="#off-map-movement">Off Map Movement.</a></li>
+        <li><a href="#turn-record">Turn Record.</a></li>
+        <li><a href="#weather-record">Weather Record.</a></li>
+        <li><a href="#holding-boxes">Holding Boxes.</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-counters">The Counters</a></li>
+    <li><a href="#the-rules">The Rules</a>
+      <ul>
+        <li><a href="#organization">Organization</a></li>
+        <li><a href="#repetition">Repetition</a></li>
+      </ul>
+    </li>
+    <li><a href="#set-up-notes">Set Up Notes</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/">
+      
+        Rules
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        OCS Series Rules, 4.3
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>OCS Series Rules, 4.3</h1>
+
+          <div class="article-style">
+            <hr>
+<h2 id="credit">Credit</h2>
+<p><strong>Series Design:</strong> Dean N. Essig</p>
+<p><strong>Playtesting and Proofreading:</strong> Perry
+Andrus, Marty Arnsdorf, Matt Bace,
+Ranier Bastian, Dave Benjamin, John
+Best, Dirk Blennemann, Doug Burrell,
+Stephen Campbell, Tom Cannon, Don
+Charuk, Carl Chatto, Brenden Clark,
+Bob Cloyd, Dav Combs, Dave Demko,
+Chris Dodd, Karsten Droste, Sara
+Essig, Anders Fager, Andrew Fischer,
+Christophe Foley, Dave Friedrichs,
+Owen Fuller, Tom Gallinger, Don
+Gilbertson, Mike Haggett, Dirk Heinz,
+Paul Herkes, Nolan Hudgens, Roger
+Hyman, Michael Junkin, John Kisner,
+Tom Klubi, Roland LeBlanc, John
+Leggat, Christoph Ludwig, Charles
+McCallum, Ethan McKinney, Dave
+Mignerey, Rod Miller, Bill Moody,
+Maurício Moutinho, Don Nesbitt,
+Brian Niffin, Elias Nordling, Mark
+Pitcavage, Steve Poitinger, Barrie
+Pollock, Dave Powell, Dave Reynolds,
+Henk Roelant, Ernesto Sassot, Boyd
+Schorzman, Bernard Sperling, James
+Sterrett, Russell Stewart, Jim Stravers,
+John Strycharz, Michael-Peter Sturz,
+Roger Taylor, Giovanni Toletti, Kevin
+Valerien, Ric Walters, Al Wambold,
+Bruce Webb, Jim Wise, and Tony
+Zbaraschuk</p>
+<p><strong>v4.0 Rewrite Team:</strong> Perry Andrus, Jim
+Daniels, Dave Demko, Dean Essig,
+Andrew Fischer, Michael Junkin, John
+Kisner, Hans Korting, Roland LeBlanc,
+and Rod Miller.</p>
+<p><strong>v4.0 Final Editor:</strong> Dave Demko</p>
+<p><strong>v4.0 to v4.3 Honcho:</strong> John Kisner, who
+coordinated all the efforts and did much
+of the heavy lifting. Thanks, John!</p>
+<p><strong>v4.3 Special Thanks:</strong> Gary Wright (for
+charts) and Mathew Hinkle (for edits).</p>
+<p><strong>Special Assistance:</strong> The Burrito as Big as
+Your Head, without which this system
+wouldn’t be what it is today.</p>
+<h2 id="coypright">Coypright</h2>
+<p>Multi-Man Publishing, Inc. 403 Headquarters Drive, Suite 7, Millersville MD 21108
+© 2018 All Rights Reserved.</p>
+<br>
+<h1 id="about">About</h1>
+<hr>
+<p>Learning OCS is tough (for me). There are a lot of rules. I created this web-friendly version of the rulebook for my own personal use. 
+I find the hyperlinked references to other rules/sections on a device-friendly, responsive website
+to be very helpful and minimizes having to flip through pages in the rulebook constantly.  I hope The Gamers will implement something like this in the future!
+That said, the authors (Mr. Dean Essig and company) have produced an incredibly well-written and technically concise rulebook.</p>
+<p>I have modified this online version of the rulebook to suit my own needs</p>
+<ul>
+<li><strong>Example:</strong> I have dramatically added to the Sequence of Play (<a href="2-0-sequence-of-play">2.0</a>). 
+Steps include hyperlinks to relevant sections and color helps me visualize where combat can occur 
+by the phasing (red) or non-phasing (blue) players. I tried to design the sequence in such a way 
+that it is my &ldquo;homescreen&rdquo; or &ldquo;main hub&rdquo; for rules when I sit down and play. Combining hyperlinks and 
+the &ldquo;back button&rdquo;, I can easily navigate to important rule sections and back quickly and easily.*</li>
+</ul>
+<h2 id="downloads">Downloads</h2>
+<ul>
+<li>OCS Series Rules v4.3 (<a href="./files/OCSv43_Rules_Bookmarked.pdf">PDF</a>)</li>
+<li>Charts and Tables v4.3 (<a href="./files/OCSv4.3Charts.pdf">PDF</a>)</li>
+<li>Turns Checklist (<a href="./files/OCS-Turn-Checklist.pdf">PDF</a>)</li>
+<li>Consolidated Errata (<a href="./files/CompleteOCSErrata.pdf">PDF</a>)</li>
+</ul>
+<p>See <a href="http://www.ocsdepot.com/" target="_blank" rel="noopener"><strong>OCS Depot</strong></a> for the official (upcoming) new archive for OCS from The Gamers.</p>
+<br>
+<h1 id="introduction">Introduction</h1>
+<hr>
+<p>Operational Combat Series (OCS)
+games simulate campaign-level combat
+from 1900 to the mid-1950s. The series
+goal is to allow a sophisticated study
+of historical events while maintaining
+mechanical simplicity.</p>
+<br>
+<h1 id="version-43-rules">Version 4.3 Rules</h1>
+<hr>
+<p>The v4.3 rulebook is a minor revision.
+Some rules have been clarified and errata
+has been corrected. Small changes are
+marked with a √. Note the chart booklet
+was given a complete makeover, but is
+functionally the same as the previous
+versions (so feel free to continue using
+them). Enjoy!</p>
+<p>Note that some terms were changed in
+the move from v3 to v4. Strategic Move
+Mode was shortened to Strat Mode,
+Combined Arms Effects was replaced by
+the more descriptive Anti-Tank Effects,
+and the old Railroad Interdiction and
+Interdiction effects were combined into
+the new Trainbusting mission. Keep
+these changes in mind when playing
+older games in the series.</p>
+<br>
+<h1 id="game-components">Game Components</h1>
+<hr>
+<h2 id="the-game-map">The Game Map</h2>
+<p>The map depicts the area in which the
+campaign was fought. Laminate the map
+or cover it with 1/8” Plexiglas to help
+protect your gaming investment.</p>
+<h3 id="the-hex-numbering-system">The Hex Numbering System.</h3>
+<p>Each hex is identified by a unique four-digit
+number in the form <strong>“column.row.”</strong> If
+a game has more than one map, a letter
+identifies each, and the hex numbers for
+hexes on a given map are prefixed with
+the map’s letter. So “B10.10” identifies
+hex 10.10 on Map B. The digits before
+the decimal point identify the hex row,
+reading along the horizontal dimension
+from left to right. The digits after the
+decimal identify the exact hex in that
+particular row, reading along the vertical
+dimension from bottom to top. Only
+every fifth hex has a printed number
+(xx.05, xx.10, xx.15) to create grid lines.
+For example, to find hex 29.17, follow
+the grid line for xx.15 until you find
+the 29.xx hexrow, then count up two
+hexes to 29.17.</p>
+<h3 id="map-edge-hexes">Map Edge Hexes.</h3>
+<p>A hex is playable
+only if at least half of the hex is showing.</p>
+<h3 id="off-map-movement">Off Map Movement.</h3>
+<p>Unless it is
+specifically allowed in a game, units can
+neither exit the map to re-enter later
+nor conduct any off-map movement.
+Destroy units forced off the map.</p>
+<h3 id="turn-record">Turn Record.</h3>
+<p>A turn record track is
+printed on the map or play aids. Each
+box represents one game turn. (See <a href="2-0-sequence-of-play/#21-the-game-turn">2.1</a>)</p>
+<h3 id="weather-record">Weather Record.</h3>
+<p>Mark the current
+weather on this track.</p>
+<h3 id="holding-boxes">Holding Boxes.</h3>
+<p>There are two types
+of holding boxes, those corresponding
+to a specific hex and those showing an
+abstract off-map location.</p>
+<ul>
+<li>Specific-hex holding boxes are used
+to relieve congestion on the map.
+The units are considered still in the
+hex associated with the box.</li>
+<li>Off-map holding boxes can hold an
+unlimited number of units. Gamespecific rules will restrict these boxes
+to one side or the other, and describe
+how units move between them and
+the map. No combat is allowed.</li>
+</ul>
+<h2 id="the-counters">The Counters</h2>
+<p>Carefully cut or punch the cardboard
+counters from the sheets and keep them
+organized (baggies work nicely) by side,
+type, and identification. This will make
+setup easier. The various kinds of units
+and markers are described in <a href="3-0-units-and-markers/">3.0</a>.</p>
+<h2 id="the-rules">The Rules</h2>
+<p>An OCS game contains both Series rules
+and Game rules. The Series booklet has
+the rules that apply to all OCS games.
+The Game booklet includes special rules,
+scenarios, and set-up information for the
+specific game.</p>
+<h3 id="organization">Organization</h3>
+<p>Rules are numbered
+by section and case. Each major rules
+grouping is a section; each paragraph
+within a section is a case. The number
+6.2 would, for example, refer to section
+6, case 2. A specific case may contain a
+number of statements that are lettered,
+as in 6.2a and 6.2b.</p>
+<h3 id="repetition">Repetition</h3>
+<p>Repetition. Once stated, a rule is
+repeated in another section only when
+needed for clarification in that section.</p>
+<h2 id="set-up-notes">Set Up Notes</h2>
+<p>In the Game rules is set-up information
+for the scenarios. Unless amended by
+special instructions in that booklet, the
+following are always true:</p>
+<ul>
+<li>
+<p><strong>A)</strong> “w/i X” means to set up a given
+unit or stack at or within X hexes
+of the location given. A stack can
+“spread out” into multiple hexes
+within this radius (and possibly
+deploy breakdown regiments).</p>
+</li>
+<li>
+<p><strong>B)</strong> Ground units can be set up in any
+desired mode. (Exception: ground
+units adjacent to enemy AttackCapable units cannot be set up in
+Reserve or Strat Mode.)</p>
+</li>
+<li>
+<p><strong>C)</strong> Transport Points that are stacked
+with Supply Points (SP) can set
+up loaded or unloaded. Transport
+Points that are not stacked with SP
+always set up unloaded (unless the
+scenario rules specify otherwise).</p>
+</li>
+<li>
+<p><strong>D)</strong> Organic Trucks start “full” only if
+a scenario explicitly states that they
+do. (But they can take advantage
+of <strong>C</strong> above if they set up stacked
+with SP).</p>
+</li>
+<li>
+<p><strong>E)</strong> Aircraft always begin Active.</p>
+</li>
+<li>
+<p><strong>F)</strong> Units cannot set up over-stacked.</p>
+</li>
+<li>
+<p><strong>G)</strong> Units generally begin the game at
+full strength.</p>
+</li>
+<li>
+<p><strong>H)</strong> When the notation “(inclusive)”
+follows set-up boundaries, those
+units can set up anywhere within
+the zone including the boundary
+lines.</p>
+</li>
+<li>
+<p><strong>I)</strong> Units can never set up in a hex that
+they could not enter using regular
+movement.</p>
+</li>
+<li>
+<p><strong>J)</strong> Units, Formation markers, and
+HQs always set up “unfueled.”</p>
+</li>
+<li>
+<p><strong>K)</strong> Use index cards to create off-map
+areas for each side’s Dead Pile and
+to organize reinforcements.</p>
+</li>
+</ul>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Aug 9, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <meta name="robots" content="noarchive">
+
+  
+  <p class="powered-by">
+    <a href="/license/">LICENSE: CC-BY-NC <br> <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-nc fa-2x"></i> </a><br>
+  </p>
+  
+
+  <p class="powered-by">
+    © 2021 Eric Van Dornshuld   |
+    &nbsp; All rights reserved.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <script src="/en/js/wowchemy.min.2ddebf8e6b39a7ecfcd4b1fe8ad3a55a.js"></script>
+
+    
+
+
+</body>
+</html>

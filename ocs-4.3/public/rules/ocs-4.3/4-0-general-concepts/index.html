@@ -1,0 +1,1397 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+    <meta name="google-site-verification" content="d3jrhKJk5FLjODpHv5yEgLpQ_2rDKZk_MEhSQyO1Dkw" />
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The terms used to describe classes of units have precise meanings that are important to understanding these rules. For instance, “ground units” describes a broader range of units than “combat units” (which are a subset of ground units), and “Attack-Capable units” are a further subdivision of combat units." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/4-0-general-concepts/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1a4ac5a75a46a9065d654e5c418374b5.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131839893-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-131839893-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/4-0-general-concepts/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="OCS Series Rules, 4.3" />
+  <meta property="og:url" content="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/4-0-general-concepts/" />
+  <meta property="og:title" content="4.0 General Concepts | OCS Series Rules, 4.3" />
+  <meta property="og:description" content="The terms used to describe classes of units have precise meanings that are important to understanding these rules. For instance, “ground units” describes a broader range of units than “combat units” (which are a subset of ground units), and “Attack-Capable units” are a further subdivision of combat units." /><meta property="og:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-08-09T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-08-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>4.0 General Concepts | OCS Series Rules, 4.3</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="61e8ee138dec4de4e755f5b2c1e2e357" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/rules/ocs-4.3"><span>OCS 4.3 Rules</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          OCS Series Rules, 4.3
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/rules/"><i class="fas fa-arrow-left pr-1"></i>Rules</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/rules/ocs-4.3/">OCS Series Rules, 4.3</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/rules/ocs-4.3/1-0-scale/">1.0 Scale</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/2-0-sequence-of-play/">2.0 Sequence of Play</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/3-0-units-and-markers/">3.0 Units and Markers</a></li>
+
+
+
+  <li class="active"><a href="/rules/ocs-4.3/4-0-general-concepts/">4.0 General Concepts</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/5-0-modes/">5.0 Modes</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/6-0-ground-movement/">6.0 Ground Movement</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/7-0-reaction-phase/">7.0 Reaction Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/8-0-overrun/">8.0 Overrun</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/9-0-ground-combat/">9.0 Ground Combat</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/10-0-barrage/">10.0 Barrage</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/11-0-exploitation-phase/">11.0 Exploitation Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/12-0-supply/">12.0 Supply</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/13-0-specialized-units/">13.0 Specialized Units</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/14-0-air-power/">14.0 Air Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/15-0-air-bases/">15.0 Air Bases</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/16-0-hedgehogs/">16.0 Hedgehogs</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/17-0-weather/">17.0 Weather</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/18-0-naval-power/">18.0 Naval Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/19-0-ports-and-shipping/">19.0 Ports and Shipping</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/20-0-breakdowns/">20.0 Breakdowns</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/21-0-optional-rules/">21.0 Optional Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/house-rules/">House Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/terms-and-definitions/">Terms and Definitions</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/summaries/">Summaries</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#41-rounding-rule">4.1 Rounding Rule</a></li>
+    <li><a href="#42-fractions">4.2 Fractions</a></li>
+    <li><a href="#43-cumulative-effects">4.3 Cumulative Effects</a></li>
+    <li><a href="#44-attack-capable-units">4.4 Attack-Capable Units</a></li>
+    <li><a href="#45-zone-of-control">4.5 Zone of Control</a></li>
+    <li><a href="#46-regimental-equivalents">4.6 Regimental Equivalents</a></li>
+    <li><a href="#47-transportation-equivalents">4.7 Transportation Equivalents</a></li>
+    <li><a href="#48-stacking">4.8 Stacking</a></li>
+    <li><a href="#49-fog-of-war">4.9 Fog of War</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/">
+      
+        Rules
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/ocs-4.3/">
+      
+        OCS Series Rules, 4.3
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        4.0 General Concepts
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>4.0 General Concepts</h1>
+
+          <div class="article-style">
+            <hr>
+<p>The terms used to describe classes of
+units have <strong>precise meanings</strong> that are
+important to understanding these rules.
+For instance, “ground units” describes
+a broader range of units than “combat
+units” (which are a subset of ground
+units), and “Attack-Capable units” are
+a further subdivision of combat units.
+Use of the word “units” by itself (not
+modified as in “independent units” or
+“DG Mode units”) refers collectively to
+all units—ground, naval, and air—when
+a narrower context is not obvious.</p>
+<h2 id="41-rounding-rule">4.1 Rounding Rule</h2>
+<p>Players will often be required to round
+decimals to whole numbers. When the
+fractional part is less than .5, round
+down. When the fractional part is .5 or
+more, round up.</p>
+<h2 id="42-fractions">4.2 Fractions</h2>
+<p>Round the final odds in combat, but
+do not round fractional strengths prior
+to determining odds. Fractional barrage
+factors are combined and then rounded
+to determine the barrage column. <strong>Never</strong>
+round fractional Movement Allowances.</p>
+<p><em><strong>Design Note:</strong> Players should take note of
+the important effect of this rounding rule
+on odds calculation. In this series, a 15 to
+6 attack rounds to 3:1.</em></p>
+<p><em><strong>Example:</strong> Three units attack with modified combat strengths of 2.5, 3.25, and
+4 (for a total strength of 9.75) against
+the defender’s strength of 2. Combat odds
+would be figured as 4.875 to 1, which is
+rounded to 5:1.</em></p>
+<h2 id="43-cumulative-effects">4.3 Cumulative Effects</h2>
+<p>In all cases where a value is subject to
+multiple modifiers, the effects are cumulative. For instance, quarter the strength
+of a combat unit halved for terrain and
+halved for supply.</p>
+<h2 id="44-attack-capable-units">4.4 Attack-Capable Units</h2>
+<p>Combat units with <strong>printed</strong> Combat
+Strengths are Attack-Capable, <strong>unless</strong> the
+strength is parenthesized or the unit is in
+Strat Mode or Reserve Mode. A printed
+Combat Strength of zero still makes a
+unit Attack-Capable (<a href="../9-0-ground-combat/#914-specialized-combats">9.14a</a>).</p>
+<p><strong>4.4a</strong> Attacking units (in both combat
+and overrun) must be Attack-Capable.</p>
+<p><strong>4.4b</strong> Attack-Capable units in Combat
+Mode and not currently marked Out of
+Supply have a Zone of Control (<a href="#45-zone-of-control">4.5</a>).</p>
+<p><strong>4.4c</strong> Ground movement into a hex with
+an enemy non-combat unit (a port, air 
+base, supply dump, Transport Point, or
+hedgehog) requires an Attack-Capable
+unit. This may result in destruction or
+capture, per <a href="../9-0-ground-combat/#914-specialized-combats">9.14</a>.</p>
+<p><em><strong>Player Note:</strong> Attack-Capable units are no
+longer required for movement into “empty”
+enemy villages or cities.</em></p>
+<h2 id="45-zone-of-control">4.5 Zone of Control</h2>
+<p>Attack-Capable units in Combat Mode
+have a Zone of Control (ZOC) unless
+currently marked Out of Supply. Units
+in other modes <strong>do not</strong> have a ZOC.
+(<strong>Exception</strong>: Exploitation Mode, <a href="../5-0-modes/#59-exploitation-mode">5.9c</a>.)
+A unit’s ZOC limits enemy actions in
+the six hexes adjacent to the unit. This
+is true regardless of the terrain in those
+hexes or the hexsides between them.</p>
+<p><strong>4.5a</strong> The following actions <strong>cannot</strong> be
+taken in an enemy ZOC. An action
+marked &lt;Negation&gt;, however, is allowed
+if the ZOC has been negated (4.5b);
+negation is not possible for the others.</p>
+<ul>
+<li><strong>A) Truck Movement. &lt;Negation&gt;</strong>
+A unit with <strong>Truck MP</strong> (mobility
+types are explained in <a href="../3-0-units-and-markers/#31-ground-units">3.1a</a> that
+<strong>enters</strong> an enemy ZOC must either
+end its movement or else conduct
+an overrun. One overrun might
+lead to another, thus allowing the
+unit to continue through more
+than one ZOC. Note that units
+<strong>starting</strong> a phase in an enemy ZOC
+can exit that hex using Truck MP,
+and that movement using Leg or
+Track MP is unaffected by ZOCs.</li>
+<li><strong>B) Supply Lines. &lt;Negation&gt;</strong> An
+enemy ZOC blocks all kinds of
+supply paths (e.g., draw, throw,
+Extenders) traced with <strong>Truck MP</strong>
+in or out of a hex. Note an HQ
+or Extender with Leg or Track
+mobility is unaffected by ZOCs.</li>
+<li><strong>C) Rail Transport - Literal.</strong> Units
+using Rail Cap.</li>
+<li><strong>D) Rail Transport - Trace Supply &lt;Negation&gt;</strong></li>
+<li><strong>E) Rail Conversion operations.</strong></li>
+<li><strong>F) Port Operations - Trace Supply. &lt;Negation&gt;</strong> <em><strong>Specific Game Note:</strong> In either edition of DAK, units <strong>do not</strong> negate EZOCs for Port Operations (F).</em></li>
+<li><strong>G) Port Operations-Literal,</strong> Using Sea Cap.</li>
+<li><strong>H) Aircraft Refit. &lt;Negation&gt;</strong></li>
+<li><strong>I) Reserve Mode.</strong> Units cannot enter Reserve Mode in an enemy ZOC (<a href="../5-0-modes/#57-reserve-mode">5.7c</a>). Once in Reserve Mode, they can enter/exit ZOC normally.</li>
+<li><strong>J) Strat Mode.</strong> Units cannot change to Strat Mode in an enemy ZOC (<a href="../5-0-modes/#58-strat-mode">5.8a</a>), nor can they ever enter a ZOC while in Strat Mode.</li>
+<li><strong>K) Repl Rebuilds.</strong></li>
+</ul>
+<p><strong>4.5b Negating ZOC.</strong> Per 4.5a, some
+ZOC effects can be negated. An enemy
+ZOC in a hex is negated if that hex
+contains a friendly combat unit at that
+moment and, further, the unit doing
+the negating <strong>will not spend MP later
+in the current phase.</strong> (It is allowed to
+leave the hex via actions such as advance
+after combat or Breakout, which do not
+require expenditure of MP.) The friendly
+combat unit doing the negation need
+not have a ZOC itself. Note that when a
+unit <strong>starts</strong> the phase in an enemy ZOC,
+negation is not needed to exit that hex.</p>
+<p><em><strong>Example:</strong> Aircraft refit can still be done
+even if a Combat Mode enemy unit is
+adjacent to the base, provided a friendly
+combat unit (of any mode) is in the hex.</em></p>
+<p><strong>4.5c ZOCs and Retreats.</strong> See <a href="../9-0-ground-combat/#912-retreats--advances">9.12e</a>.</p>
+<p><em><strong>Design Note:</strong> The lack of ZOC effects
+on Leg and Track movement can cause
+anomalous events until a player masters the
+implications of this feature. Players need to
+think carefully about unit placement, both
+along the front lines and in the rear area!</em></p>
+<h2 id="46-regimental-equivalents">4.6 Regimental Equivalents</h2>
+<p>The concept of Regimental Equivalents
+(RE) is used to figure the size of a unit
+(important for things like stacking and
+transport). Only ground combat units
+have RE sizes, as only they need them.</p>
+<ul>
+<li>Multi-step units have their RE size
+shown on the counter.</li>
+<li>Battalions are 1/2 RE.</li>
+<li>Repl units and company-sized units
+are 1/4 RE.</li>
+<li>All other sizes count as 1 RE. (There
+may be game-specific exceptions.)</li>
+</ul>
+<p>A multi-step unit’s RE size is reduced by
+one for each step loss (<a href="../9-0-ground-combat/#911-step-losses">9.11</a>). All other
+combat units are 1 step for loss purposes,
+regardless of RE size. (Some games have
+exceptions to this rule.)</p>
+<p><em><strong>Design Note:</strong> The RE concept has its roots
+in the GDW Europa games.</em></p>
+<h2 id="47-transportation-equivalents">4.7 Transportation Equivalents</h2>
+<p>Combat units, Transport Points, and
+SP can be transported by rail (<a href="../13-0-specialized-units/#133-railroads">13.3</a>),
+air (<a href="../14-0-air-power/#149-air-transport">14.9</a>), Landing Craft (<a href="../18-0-naval-power/#184-landing-craft">18.4</a>), and
+abstract shipping (<a href="../19-0-ports-and-shipping/">19.0f</a>). A Transport
+Point (<a href="../13-0-specialized-units/#132-transport-points">13.2</a>) can <strong>only</strong> carry SP.</p>
+<p><strong>4.7a</strong> RE and SP are interchangeable
+transportation equivalents. One point
+of rail capacity can move either 1 SP or
+1 RE (or a combination, such as 2T of
+supply and 1/2 RE of units).</p>
+<p><strong>4.7b</strong> If a unit’s printed MA in <strong>Move
+Mode</strong> is from <strong>1 to 6 Leg MP</strong>, inclusive,
+its transportation equivalent is halved.
+For all other units, the transportation
+cost is the same as the RE size.</p>
+<p><strong>4.7c</strong> Transport Points can load (and
+carry) a number of SP equal to their
+point value. Transport Points can be
+carried by landing craft, rail, or shipping
+(but not by air). Count only the size
+of the Transport Points when figuring
+the transportation equivalent—whether
+loaded with SP or not, it always takes
+1 point of capacity to ship 1 Transport
+Point.</p>
+<p><strong>4.7d</strong> Movement and Transport. A unit
+cannot be moved by more than one type
+of transport in a phase—for instance, a 
+unit is not allowed to move by rail to
+an airbase, and then immediately use air
+transport. Furthermore, ground units
+cannot spend any movement points in
+the phase they make Air Drops (<a href="../14-0-air-power/#1410-air-drop">14.10</a>)
+or Beach Assaults (<a href="../18-0-naval-popwer/#186-beach-assaults">18.6</a>), or when they
+move by Shipping (<a href="../19-0-ports-and-shipping">19.0f</a>). Sometimes,
+however, <strong>half MA</strong> can be spent by units
+being transported:</p>
+<ul>
+<li><strong>before</strong> when using rail cap (<a href="../13-0-specialized-units/#133-railroads">13.3c</a>).</li>
+<li><strong>before and/or after</strong> when using Air
+Transport (<a href="../14-0-air-power/#149-air-transport">14.9d</a>).</li>
+<li><strong>after</strong> an ALT landing (<a href="../18-0-naval-popwer/#185-amphibious-landings">18.5h</a>) that
+requires a roll (but never in cases
+where no ALT roll is made).</li>
+</ul>
+<h2 id="48-stacking">4.8 Stacking</h2>
+<p>Stacking is having more than one unit
+in a hex. <strong>The maximum number of
+combat units allowed to stack in a
+hex is 10 RE.</strong> Any number of SP or
+Transport Points can stack together in a
+hex, but never more than one port, one
+air base, and one hedgehog. Stacking in
+Off-Map Holding Boxes is unlimited.
+Air and naval stacking is described in
+<a href="../14-0-air-power/#142-aircraft-movement">14.2a</a> and <a href="../18-0-naval-popwer/#181-general-naval-rules">18.1b</a>. There is no movement
+cost for stacking or unstacking.
+Usually only one side’s units can be
+in a given hex, but on rare occasions
+friendly and enemy units are allowed
+to stack together (see <a href="../4-0-general-concepts/#48-stacking">4.8c</a>). Nationality
+differences among friendly units has no
+effect on stacking (unless game-specific
+rules contain restrictions).</p>
+<p><strong>4.8a</strong> Overstacking is having more than
+10 RE of combat units in a given hex at
+the end of <strong>any</strong> segment or phase. There
+is one exception: stacking is not enforced
+in the Reinforcement Phase (see <a href="../13-0-specialized-units/#136-reinforcements">13.6</a>).
+The owning player is required to reduce
+any overstacked hexes by eliminating the
+units of his choice.
+Units can temporarily overstack during
+movement except when conducting an
+overrun, when the overrunning units
+and any other friendly units in the hex
+cannot exceed the 10 RE limit.</p>
+<p><strong>4.8b Order of Stacking.</strong> The player can
+to a certain degree arrange his stacks in
+any order that makes sense to him, but
+there are some requirements related to
+fog of war and ease of play.</p>
+<ul>
+<li><strong>A)</strong> Mode and Out of Supply markers
+should <strong>always</strong> be placed on <strong>top</strong> of
+all such units in the hex. Except
+where another such marker comes
+between them, the markers imply
+that <strong>all</strong> units beneath them in the
+stack are in that mode (or Out of
+Supply). Some units can never be
+in a certain mode or status, and
+those units simply ignore any such
+marker above them in the stack.
+For example, SP and Inactive air
+units under a DG marker are not
+in Disorganized Mode.</li>
+<li><strong>B)</strong> Put Low, Exhausted, or Step Loss
+markers <strong>beneath</strong> each and every
+affected unit.</li>
+<li><strong>C)</strong> If a unit with a ZOC is in a hex,
+it should be the top combat unit
+(to make ZOCs obvious).</li>
+<li><strong>D)</strong> An HQ can be the top combat
+unit in the hex when no enemy
+ground units are adjacent (to help
+the owning player see his logistical
+net). The enemy player must be
+told if the hex has a ZOC.</li>
+<li><strong>E)</strong> Active planes are put on top of any
+ground units, but on request the
+enemy player can also see the top
+combat unit and any hedgehog. If
+an Active fighter is in the stack, it
+should be the top air unit (to make
+Patrol Zones obvious).</li>
+<li><strong>F)</strong> If a hedgehog is present, it should
+be the top ground unit (to make
+Hogs obvious). Again, the enemy
+player can see the top combat unit
+on request.</li>
+</ul>
+<p><strong>4.8c Enemy Stacks.</strong> Friendly units can
+move or retreat into hexes with enemy
+units in the following cases <strong>only</strong>. There
+is no extra MP cost. If an unlisted type
+of enemy unit is in the hex, friendly
+units <strong>cannot</strong> enter.</p>
+<ul>
+<li><strong>A)</strong> Attack-Capable units can enter
+hexes with enemy ships, planes,
+and non-combat units. Resolve
+the Specialized Combat per <a href="../9-0-ground-combat/#914-specialized-combats">9.14</a>.</li>
+<li><strong>B)</strong> Ships can enter hexes with enemy
+non-combat units and air units.
+(They coexist.)</li>
+<li><strong>C)</strong> Planes conducting a mission can
+enter hexes containing all kinds of
+enemy units</li>
+<li><strong>D)</strong> Rail transport and supply paths
+can be traced through enemy noncombat units, planes, and ships
+(but cargo cannot detrain in these
+hexes).</li>
+</ul>
+<p><strong>Reminder:</strong> Non-combat units are SP,
+Transport Points, hedgehogs, air bases,
+and ports. See <a href="../3-0-units-and-markers/#33-non-combat-units">3.3</a>.</p>
+<h2 id="49-fog-of-war">4.9 Fog of War</h2>
+<p><strong>4.9a</strong> A player can never look through
+an enemy stack. However, the enemy
+player may always see the <strong>hedgehog,
+top Combat Mode Attack-Capable
+unit</strong> (or top combat unit if none have
+a ZOC), <strong>and top Active plane</strong> in any
+hex. While the player will know if the
+top unit is Strat Mode, DG, or Out of
+Supply, he is not entitled to know about
+internal stocks status or steps lost.</p>
+<p><strong>4.9b</strong> During combat (both regular and
+overrun), both players must reveal their
+Action Rating, AT Effects (<a href="../9-0-ground-combat/#94-terrain-and-unit-strength">9.4e</a>), and
+total Combat Strength. Neither side
+is required to show actual units (other
+than per <a href="#49-fog-of-war">4.9a</a>).</p>
+<p><strong>4.9c</strong> During a barrage, the barraging
+player should reveal his total Barrage
+Strength, and be informed of all relevant
+table shifts or Flak Points.</p>
+<p><strong>4.9d</strong> During Air Combat, both players
+should reveal all aircraft present and
+which are involved in each round.</p>
+<p><strong>4.9e</strong> Players normally make die rolls
+in the open, after stating their purpose
+(such as “this is my Variable Repl roll”).
+If players agree, they can make certain
+rolls in secret to increase the fog of war.</p>
+<br>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/example-move-in-zoc.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/rules/ocs-4.3/3-0-units-and-markers/" rel="next">3.0 Units and Markers</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/rules/ocs-4.3/5-0-modes/" rel="prev">5.0 Modes</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Aug 9, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <meta name="robots" content="noarchive">
+
+  
+  <p class="powered-by">
+    <a href="/license/">LICENSE: CC-BY-NC <br> <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-nc fa-2x"></i> </a><br>
+  </p>
+  
+
+  <p class="powered-by">
+    © 2021 Eric Van Dornshuld   |
+    &nbsp; All rights reserved.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <script src="/en/js/wowchemy.min.2ddebf8e6b39a7ecfcd4b1fe8ad3a55a.js"></script>
+
+    
+
+
+</body>
+</html>

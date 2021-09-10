@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://dornshuld.chemistry.msstate.edu/sitemap.xml

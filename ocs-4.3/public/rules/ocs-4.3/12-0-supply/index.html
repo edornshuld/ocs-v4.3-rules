@@ -1,0 +1,1918 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+    <meta name="google-site-verification" content="d3jrhKJk5FLjODpHv5yEgLpQ_2rDKZk_MEhSQyO1Dkw" />
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="There are two kinds of supply: on-map supply (represented by SP and Token counters) and trace supply (which is abstracted). On-map supply is a type of non-combat unit primarily used to pay artillery barrage, combat supply, and fuel costs." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/12-0-supply/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1a4ac5a75a46a9065d654e5c418374b5.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131839893-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-131839893-2', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hufc1c15e6a498a5ebe0f850a433bf3a96_788300_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/12-0-supply/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="OCS Series Rules, 4.3" />
+  <meta property="og:url" content="https://dornshuld.chemistry.msstate.edu/rules/ocs-4.3/12-0-supply/" />
+  <meta property="og:title" content="12.0 Supply | OCS Series Rules, 4.3" />
+  <meta property="og:description" content="There are two kinds of supply: on-map supply (represented by SP and Token counters) and trace supply (which is abstracted). On-map supply is a type of non-combat unit primarily used to pay artillery barrage, combat supply, and fuel costs." /><meta property="og:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-08-09T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-08-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>12.0 Supply | OCS Series Rules, 4.3</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="682c7182972ec8d38853cfc93779d52c" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_0x70_resize_lanczos_3.png" alt="OCS Series Rules, 4.3"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/rules/ocs-4.3"><span>OCS 4.3 Rules</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          OCS Series Rules, 4.3
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/rules/"><i class="fas fa-arrow-left pr-1"></i>Rules</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/rules/ocs-4.3/">OCS Series Rules, 4.3</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/rules/ocs-4.3/1-0-scale/">1.0 Scale</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/2-0-sequence-of-play/">2.0 Sequence of Play</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/3-0-units-and-markers/">3.0 Units and Markers</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/4-0-general-concepts/">4.0 General Concepts</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/5-0-modes/">5.0 Modes</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/6-0-ground-movement/">6.0 Ground Movement</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/7-0-reaction-phase/">7.0 Reaction Phase</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/8-0-overrun/">8.0 Overrun</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/9-0-ground-combat/">9.0 Ground Combat</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/10-0-barrage/">10.0 Barrage</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/11-0-exploitation-phase/">11.0 Exploitation Phase</a></li>
+
+
+
+  <li class="active"><a href="/rules/ocs-4.3/12-0-supply/">12.0 Supply</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/13-0-specialized-units/">13.0 Specialized Units</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/14-0-air-power/">14.0 Air Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/15-0-air-bases/">15.0 Air Bases</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/16-0-hedgehogs/">16.0 Hedgehogs</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/17-0-weather/">17.0 Weather</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/18-0-naval-power/">18.0 Naval Power</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/19-0-ports-and-shipping/">19.0 Ports and Shipping</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/20-0-breakdowns/">20.0 Breakdowns</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/21-0-optional-rules/">21.0 Optional Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/house-rules/">House Rules</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/terms-and-definitions/">Terms and Definitions</a></li>
+
+
+
+  <li class=""><a href="/rules/ocs-4.3/summaries/">Summaries</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#121-supply-points">12.1 Supply Points</a></li>
+    <li><a href="#122-transportation-of-supply">12.2 Transportation of Supply</a></li>
+    <li><a href="#123-on-map-supply">12.3 On-Map Supply</a></li>
+    <li><a href="#124-combat-supply">12.4 Combat Supply</a></li>
+    <li><a href="#125-fuel-supply">12.5 Fuel Supply</a></li>
+    <li><a href="#126-trace-supply">12.6 Trace Supply</a></li>
+    <li><a href="#127-extenders">12.7 Extenders</a></li>
+    <li><a href="#128-attrition--out-of-supply">12.8 Attrition &amp; Out of Supply</a></li>
+    <li><a href="#129-specialty-supply-levels">12.9 Specialty Supply Levels</a></li>
+    <li><a href="#1210-internal-stocks">12.10 Internal Stocks</a></li>
+    <li><a href="#1211-destruction-and-capture">12.11 Destruction and Capture</a></li>
+    <li><a href="#example-maximum-stretch-of-hqs">Example: Maximum Stretch of HQs</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/">
+      
+        Rules
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/rules/ocs-4.3/">
+      
+        OCS Series Rules, 4.3
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        12.0 Supply
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>12.0 Supply</h1>
+
+          <div class="article-style">
+            <hr>
+<p>There are two kinds of supply: on-map
+supply (represented by SP and Token
+counters) and trace supply (which is
+abstracted). On-map supply is a type
+of non-combat unit primarily used to
+pay artillery barrage, combat supply,
+and fuel costs. Trace supply is used to
+determine whether combat units are
+“in supply” during their Supply Phase.
+SP can be used to provide trace supply
+when combat units do not have a valid
+supply line, but trace supply can never
+be substituted when SP are needed.</p>
+<p>On-map supply is normally stockpiled
+in dumps set up behind the front lines.
+Units sometimes are close enough to
+“draw” supply directly from the dump,
+but more commonly supply is “thrown”
+to them by an HQ unit.</p>
+<p>Trace supply is notional. Combat units
+must trace a path to a supply source,
+usually a port or a map edge hex. As with
+on-map supply, HQs are typically used
+to put the front lines in trace supply.
+Rail connections and Transport Point
+“Extenders” are often used to cover long
+distances back to a supply source.</p>
+<p><strong>Important Note:</strong> Only combat units
+require supply. Non-combat units, air
+units, and naval units never consume
+SP or need trace supply—their supply
+needs are not explicitly modeled (except
+for air bases, which require refit supply).</p>
+<h2 id="121-supply-points">12.1 Supply Points</h2>
+<p><strong>12.1a Mechanical Handling.</strong> Players
+can break down and add together SP
+in the same hex by “making change”
+with SP counters of equal value. Players
+can further break down SP to Tokens,
+which are the small change of logistical
+currency. <strong>One SP equals four Tokens
+or conversely, one Token equals 1/4
+SP.</strong> Combine Tokens into SP when-
+ever possible to reduce stack clutter.
+The abbreviation used for Token is T,
+so the shorthand for two Tokens is 2T.</p>
+<p>Note the graphic displayed on the SP
+differs from that on Tokens so that they
+are easy to tell apart, and the graphic on
+the Token counter does not imply that
+Tokens are only used for ammunition.
+SP and Tokens are identical aside from
+their denomination (a Token being a
+fractional part of an SP).</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/supply-points-12.1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>Example 1:</strong> A player must spend 1T to
+fuel a moving tank unit from a supply
+dump with a 1 SP counter. He flips the
+counter to its 3T side to pay for the fuel.</p>
+<p><strong>Example 2:</strong> In paying for a 2T barrage
+out of a 5 SP dump, the player first realizes
+that 2T is the same as 1/2 SP. The dump
+will expend 1/2 SP and have 4 1/2 SP
+remaining. He flips the 5 SP counter to
+its 4 SP side, and puts a 2T counter in
+the hex to add the 1/2 SP.</p>
+<p><strong>12.1b Supply Dumps.</strong> Any location
+containing Supply Points, whether on
+the ground or loaded on a Transport
+Point, is called a dump. SP do not have
+to be unloaded to be used.</p>
+<p><strong>12.1c Generic Supply Dumps.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/generic-supply-dumps-12.1c.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Some
+supply counters have letter
+designations instead of the
+usual numbers. A player can
+use these to represent supply
+dumps of any size. Just place the marker
+on the map and record its number of
+SP on a scrap of paper. Aside from the
+paper record, these dumps are handled
+the same as any other SP in the game.
+Remove the marker if the dump is ever
+emptied.</p>
+<p><strong>12.1d Ownership of Supply Points.</strong>
+The generic SP counters are common
+to both players, so it is important that
+players keep track of who owns what. An
+SP belongs to (and can only be used by)
+the player who brought it onto the map
+unless it has been captured (see <a href="../9-0-ground-combat/#914-specialized-combats">9.14b</a>).</p>
+<h2 id="122-transportation-of-supply">12.2 Transportation of Supply</h2>
+<p>A player can move SP using Transport
+Points and his air, naval, and rail assets.
+The capabilities and limitations of each
+are in the rules sections governing each
+method (<a href="../13-0-specialized-units/#132-transport-points">13.2</a>, 
+<a href="../13-0-specialized-units/#133-railroads">13.3</a>, 
+<a href="../14-0-air-power/#149-air-transport">14.9</a>, 
+<a href="../14-0-air-power/#1410-air-drop">14.10</a>, 
+<a href="../18-0-naval-power/#184-landing-craft">18.4</a>,
+and <a href="../19-0-ports-and-shipping/">19.0</a>).</p>
+<p><strong>12.2a Leapfrogging.</strong> A given SP can be
+moved by only one type of transport (air
+transport, naval shipping, rail cap, or
+Transport Point) in a single phase, and
+no SP can be loaded if it was unloaded
+previously in that same phase.</p>
+<p><strong>12.2b</strong> It is not a violation of the leapfrog
+rule if an SP is moved across the map
+and then used immediately.</p>
+<h2 id="123-on-map-supply">12.3 On-Map Supply</h2>
+<p>Supply Points are used in various phases
+to fuel movement, supply combat, refit
+aircraft, resupply internal ammo stocks,
+pay for construction, and as a substitute
+for needed trace supply.</p>
+<p><strong>Important Note:</strong> Players use the <strong>same</strong>
+mechanics of direct draw and HQ-throw
+<strong>any</strong> time they need supply (for trace,
+fuel, combat, construction, restocking
+internals, or aircraft refit). Fuel is never
+required to draw, throw, or trace supply.
+(<strong>Exception:</strong> Per <a href="../18-0-naval-power/#185-amphibious-landings">18.5e</a>, to draw from SP
+loaded on a Landing Craft a unit must
+be in a hex adjacent, and HQs are <strong>not</strong>
+allowed to “throw” supply drawn from
+a Landing Craft.)</p>
+<p><strong>12.3a Direct Draw.</strong> To draw supply,
+units must be within 5 MP of a dump,
+or a hex that is <strong>adjacent to</strong> the dump
+(<a href="#123-on-map-supply">12.3c</a>). Needed supply can be drawn
+from one or more dumps within range.
+Always use Truck MPs when counting
+the path back to a dump. (<strong>Exception</strong>:
+for an HQ with a throw range that is
+Leg or Track, use that mobility type.)
+Count the MP just as if moving a unit
+(see <a href="#123-on-map-supply">12.3d</a>).</p>
+<p><strong>12.3b Throwing Via HQ.</strong> An HQ able
+to draw SP from a dump (per <a href="#123-on-map-supply">12.3a</a>) can
+then pass needed supply forward to the
+extent of its printed throw range.</p>
+<p>An HQ’s throw range, in MP, appears
+on the counter. Color is used to indicate
+the throw range’s mobility type (<a href="../3-0-units-and-markers/#31-ground-units">3.1a</a>).
+To throw supply, count a movement
+path using this throw range from the
+HQ to the unit needing supply, or a
+hex <strong>adjacent to</strong> the unit (<a href="#123-on-map-supply">12.3c</a>). Count
+the MP to just as if moving a unit (see
+12.3d).</p>
+<ul>
+<li><strong>A)</strong> HQs can only throw supply that
+is used immediately. (To move a
+dump to a new location requires
+some form of transport.)</li>
+<li><strong>B)</strong> HQs can throw to any number of
+friendly units (but specific games
+might impose restrictions).</li>
+<li><strong>C)</strong> HQs in Strat Mode cannot throw
+supply.</li>
+<li><strong>D)</strong> HQs cannot “re-throw” supply
+given to them by another HQ, but
+can use supply thrown to them for
+their own needs.</li>
+</ul>
+<p><strong>12.3c Adjacent Is Close Enough.</strong> The
+“adjacent to” provision of supply paths
+is very important: regardless of terrain
+(even if prohibited), it is assumed that
+the unit will be able to get its hands
+on supply that can reach an adjacent
+hex. This applies to all types of supply
+handling that use direct draw or HQ
+throw.</p>
+<p><strong>12.3d Supply Path Movement.</strong> Any
+kind of supply path (draw, throw, or
+trace) is counted as if moving a non-
+combat unit through the hexes of the
+supply path. These paths can be traced
+through enemy non-combat units, ships,
+and planes, but never through a hex
+containing an enemy combat unit. All
+of the movement restrictions contained
+in section <a href="../6-0-ground-movement/#61-how-to-move-ground-units">6.1</a> apply when counting out
+supply paths.</p>
+<p>An un-negated enemy ZOC blocks all
+kinds of supply paths in or out of a hex
+that are being traced with Truck MP.
+Note that some HQs and Extenders use
+Leg MP or Track MP, and the supply
+paths of these are unaffected by ZOCs.</p>
+<p>Always use “normal” terrain costs (the
+summer/clear variety) for supply paths,
+ignoring all temporary “bad” ground
+conditions such as mud and snow, as
+well as the extra cost of moving through
+a Trainbusting Zone. (<strong>Exception:</strong> A
+unit <strong>can</strong> use movement costs that are
+temporarily **reduced88 by weather.)</p>
+<p><strong>12.3e Holding Boxes and Supply.</strong> A
+unit in a holding box representing a
+specific hex draws supply as if it is in
+that hex on the map (since this type
+of holding box only exists to give large
+stacks some elbow room). A unit in a
+holding box representing an off-map
+location draws supply from within that
+holding box (which usually has infinite
+supply dumps). On-map units cannot
+draw supply from an off-map holding
+box.</p>
+<h2 id="124-combat-supply">12.4 Combat Supply</h2>
+<p>Direct Draw (<a href="#123-on-map-supply">12.3a</a>) and Throwing Via
+HQ (<a href="#123-on-map-supply">12.3b</a>) are used to receive and
+distribute combat supply (<a href="../9-0-ground-combat/#95-supply-and-combat">9.5</a>). Units
+can use internal stocks only if on-map
+supply is unavailable. See <a href="#1210-internal-stocks">12.10</a>.</p>
+<ul>
+<li>Attacker cost is 1T per attacking
+step. (<strong>Exception:</strong> in DAK, 2-step
+brigades cost 1T.)</li>
+<li>Defender cost is 2T per combat.
+(<strong>Exception:</strong> for 1 RE or less, cost is
+just 1T.)</li>
+</ul>
+<p><strong>Important Note:</strong> Units which do not
+have their full combat supply available
+cannot attack at all. Defenders always
+have the option to withhold combat
+supply and defend at half strength.</p>
+<h2 id="125-fuel-supply">12.5 Fuel Supply</h2>
+<p>Direct Draw (<a href="#123-on-map-supply">12.3a</a>) and Throwing via
+HQ (<a href="#123-on-map-supply">12.3b</a>)  are used to receive needed
+fuel supply.</p>
+<p><strong>12.5a</strong> Combat units using <strong>Truck</strong> MP or
+<span style="color: red;">Tracked </span> MP <strong>cannot expend any MP</strong>
+unless fuel costs are paid. Full fuel costs
+must be paid to move even one hex.
+(<strong>Exception:</strong> movement following ALT
+landings, <a href="../18-0-naval-power/#185-amphibious-landings">18.5h</a>.) Fuel is <strong>never</strong> needed
+for other types of units or functions
+(such as Leg units, trucks, ships, aircraft,
+and supply draw/throw).</p>
+<p><strong>12.5b</strong> Combat units needing fuel to
+move <strong>do not</strong> need fuel to attack, defend,
+barrage, retreat, or advance after combat.
+Overrun <strong>requires</strong> the attacker to pay for
+fuel even if the stack begins movement
+adjacent to the defender.</p>
+<p><strong>12.5c</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/petrol-12.5c.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>According to the cases
+below, pay fuel costs in any
+phase a unit incurs them at
+the instant they are incurred.</p>
+<ul>
+<li><strong>A) Formation Method.</strong> Pay 1 SP to
+fuel a multi-unit formation. <strong>This
+fuel lasts until the next Friendly
+Clean Up Phase.</strong> To mark this,
+flip the Formation marker (<a href="../13-0-specialized-units/#137-formation-markers">13.7</a>)
+to its Fueled side. If all units of
+the formation needing fuel are not
+using the same HQ for supply-
+throw (or using the same dump for
+direct-draw), apply the single-unit
+method (below) to fuel units that
+cannot draw from the common
+source.</li>
+<li><strong>B) HQ Method.</strong> Pay 1 SP to fuel an
+HQ itself plus all <strong>independent</strong>
+units within its throw range. <strong>This
+fuel lasts until the next Friendly
+Clean Up Phase.</strong> Mark this by
+placing a Fuel marker on top of
+the HQ. See 12.5e.</li>
+<li><strong>C) Single-Unit Method.</strong> Pay 1T per
+unit that needs fuel. This method
+can be used by <strong>any</strong> unit, regardless
+of its size or steps, and whether it
+is independent, a multi-step unit,
+or part of a formation. <strong>This fuel
+lasts for the current phase only.</strong>
+There is usually no reason to mark
+this type of fuel.</li>
+</ul>
+<p><strong>12.5d</strong> The phasing player must remove
+Fuel markers from his HQs and flip
+his Formation markers to their non-fueled 
+sides during his Clean Up Phase.
+(This sequence means that Fuel markers
+placed during the Reaction Phase, when
+releasing Reserves, give the best possible
+“miles per gallon.”)</p>
+<p><strong>12.5e</strong> An HQ can fuel all <strong>independent</strong> 
+units (defined in <a href="../3-0-units-and-markers/#32-combat-units">3.2f</a>) in its throw
+range “for free” (avoiding the single-unit
+method’s 1T per unit per phase) once
+the cost of <a href="#125-fuel-supply">12.5c(B)</a> has been paid. The
+throw range is counted when each inde-
+pendent unit begins to move.</p>
+<p><strong>A fueled HQ is only allowed to throw
+fuel from a single location each phase.</strong>
+This affects a moving HQ, which must
+choose whether to throw fuel from its
+starting hex or its ending hex.</p>
+<p><strong>12.5f</strong> The placement of reinforcements
+doesn’t need fuel, but moving beyond
+the entry hex requires payment of fuel
+costs (if any)—reinforcements <strong>do not</strong>
+get “free fuel” on the turn of arrival.</p>
+<p><strong>12.5g</strong> Internal stocks *<em>cannot</em> be used
+for fuel costs.</p>
+<p><em><strong>Example:</strong> In his Reaction Phase, a player
+wants to move a panzer division and five
+independent Assault Gun battalions. The
+player pays 1 SP to fuel an HQ to run the
+non-divisionals (since the 1 SP is cheaper
+than the 5T he would have to spend for
+them individually). The panzer division
+has been pretty well mauled in earlier
+battles and has just one panzer battalion
+and one infantry regiment left. The player
+determines that he can afford to let the
+infantry walk (using their Leg MP in
+Combat Mode) and pays 1T for the panzer
+battalion. The total fuel cost is 5T (and it
+might have cost as much as 9T had he not
+been maximizing efficiency).</em></p>
+<p><em>Play passes into the above player’s own
+turn. In his regular Player Turn some of
+the above decisions will affect play—both
+in the regular Movement Phase and in
+the Exploitation Phase. The HQ which
+was fueled for the Assault Guns is still
+fueled (and will be until the player’s Clean
+Up Phase) so all non-divisional units in
+range of that HQ (including other HQs
+and that HQ itself) can move during the
+Player Turn without additional costs. The
+panzer division’s panzer battalion cannot
+move without further payment, however,
+because the 1T expended only lasted for
+the phase in which it was spent. The Leg
+infantry is unaffected, as it can still walk.
+To move the panzer battalion about will
+require further fuel expenditures.</em></p>
+<h2 id="126-trace-supply">12.6 Trace Supply</h2>
+<p>Combat units need to check for trace
+supply during their Supply Phase. If
+unable to obtain trace supply or “eat
+off the map” (<a href="#126-trace-supply">12.6c</a>), the combat units
+are marked Out of Supply and must
+check for Attrition. In addition, units
+can use Breakout (<a href="#128-attrition--out-of-supply">12.8e</a>) if unable to
+“make their trace” during the Breakout
+Segment.</p>
+<p>Direct Draw (<a href="#123-on-map-supply">12.3a</a>) and Throwing Via
+HQ (<a href="#123-on-map-supply">12.3b</a>) are used to receive and
+distribute trace supply.</p>
+<p><strong>12.6a</strong> There are three kinds of Supply
+Sources:</p>
+<ul>
+<li><strong>1)</strong> Map-edge railroad hexes that allow
+Reinforcement entry, plus other
+supply sources mentioned in the
+game-specific rules, or</li>
+<li><strong>2)</strong> Detrainable hexes (see <a href="../13-0-specialized-units/#133-railroads">13.3c</a>), or</li>
+<li><strong>3)</strong> Hexes with an Extender (<a href="#127-extenders">12.7</a>)
+that connect to a detrainable hex
+or directly to a supply source.</li>
+</ul>
+<p><strong>12.6b</strong> An enemy ZOC in any type of
+Supply Source hex prevents trace supply
+from being obtained, but these can be
+negated per <a href="../4-0-general-concepts/#45-zone-of-control">4.5b</a>.</p>
+<p><strong>12.6c Eating off the Map.</strong> Combat
+units that cannot “make their trace” to
+a Supply Source can “eat” SP to obtain
+trace supply. For every 1T spent, up to
+2 RE (within draw or throw range of the
+dump) can be fed. Round all fractions
+up; for example, 6 1/2 RE would cost
+4T.</p>
+<p>Units can <strong>only</strong> “eat off the map” if no
+trace supply is available. See also <a href="#126-trace-supply">12.6e</a>
+and <a href="#126-trace-supply">12.6f</a>.</p>
+<p><strong>12.6d</strong> Combat units that can <strong>neither</strong>
+“make their trace” <strong>nor</strong> “eat off the map”
+are marked Out of Supply and roll for
+Attrition (see <a href="#128-attrition--out-of-supply">12.8</a>).</p>
+<p><em><strong>Play Note:</strong> Units are never forced to “eat
+off the map,” even when SP are available.
+At times, letting surrounded troops “starve”
+to save combat supply is a good gamble.</em></p>
+<p><strong>12.6e</strong> Strat Mode units are not allowed
+to “eat off the map” and must end their
+movement in hexes where trace supply
+is currently possible. An HQ in Strat
+Mode cannot throw supplies.</p>
+<p><strong>12.6f</strong> All combat units in a multi-unit
+formation should “make their trace” to
+the same HQ or the same direct-draw
+source. If this is not possible, then select
+part of the formation to trace “for free”
+while the rest must eat off the map or
+become Out of Supply (per <a href="#126-trace-supply">12.6d</a>).</p>
+<p><strong>12.6g</strong> Ground units on a Landing Craft
+are always considered in trace supply.</p>
+<p><strong>12.6h</strong> Units making a planned air drop
+(<a href="../14-0-air-power/#1410-air-drop">14.10b</a>) do not require trace supply on
+the turn they are dropped.</p>
+<h2 id="127-extenders">12.7 Extenders</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/extenders-9.14d.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Extenders are used to help
+bridge gaps in trace supply.
+Five Transport Points of the
+same type (usually truck or
+wagon) in a hex can be converted into
+an appropriate “Extender” counter by
+expending half their MA (per <a href="#127-extenders">12.7d</a>).
+Extenders cannot move (or be used for
+any other Transport Point purpose).</p>
+<ul>
+<li>Organic Trucks can never be used
+to create an Extender.</li>
+<li>If a game’s counter mix does not
+include Extenders (always on the
+back of 5-point Transport Points)
+they cannot be created at all.</li>
+</ul>
+<p><strong>12.7a</strong> The only purpose of Extenders is
+to create new locations from which trace
+supply can be drawn. (They never move
+SP, help move RR cargo, or increase
+draw/throw ranges.) Extenders can act
+as a trace supply&hellip;</p>
+<ul>
+<li><strong>A) &hellip;source</strong> when it is linked to a
+detrainable hex or directly to a
+supply source.</li>
+<li><strong>B) &hellip;connection</strong> between two sets
+of rail hexes, allowing hexes along
+the “forward”rail line to become
+detrainable if the “back” one leads
+to a supply source.</li>
+<li><strong>C) &hellip;connection</strong> between a rail hex
+and a supply source, making hexes
+along the rail line detrainable.</li>
+</ul>
+<p><strong>12.7b</strong> Extenders have a range that is
+the maximum distance (in MP) <strong>back</strong>
+to the connected hex. The Extender is
+always posted at the “forward” end of
+this connection (the hex furthest from
+the ultimate supply source).</p>
+<p><strong>12.7c</strong> An Extender can link to other
+Extenders in a “daisy chain” to make
+longer connections.</p>
+<p><strong>12.7d Creating Extenders.</strong> Switching
+into an Extender costs a Transport Point
+half of its MA. Extenders cannot move
+unless they flip back to the Transport
+Points side of the counter, using half
+their MA to do so. A given Extender
+may be formed by only one <strong>type</strong> of
+Transport Point (e.g. truck or wagon,
+not both). A loaded Transport Point
+cannot convert into an Extender (it must
+first unload). An Extender cannot be
+created in a hex where it cannot connect
+to a trace supply source at that moment.
+Extenders that later have their trace cut
+can stay as Extenders, although they
+cease to function as such.</p>
+<p><strong>12.7e</strong> Transport Points forming into an
+Extender can come from different hexes,
+combining in a common hex (where
+each spends half of its MA).</p>
+<p><strong>12.7f</strong> After an Extender is switched back
+into Transport Points, the points can
+be moved separately to different hexes.
+They need not move as a stack.</p>
+<p><strong>12.7g</strong> Extenders can apply the “adjacent
+is good enough” rule, as in all other
+supply-related functions.</p>
+<p><strong>12.7h</strong> Extenders “collapse” when enemy
+combat units enter their hex, and can
+also do so voluntarily. See <a href="../9-0-ground-combat/#914-specialized-combats">9.14d</a>.</p>
+<p><em><strong>Play Note:</strong> Garrison Extenders, or else.</em></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/uses-of-extenders.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="128-attrition--out-of-supply">12.8 Attrition &amp; Out of Supply</h2>
+<p><strong>12.8a</strong> In the Supply Phase, a friendly
+stack that cannot “make its trace” or “eat
+off the map” is marked Out of Supply
+and checked for Attrition. The marker
+remains until trace supply is regained
+in a subsequent friendly Supply Phase.
+Units marked Out of Supply must check
+for Attrition at the end of every friendly
+Supply Phase until back in supply.</p>
+<p><strong>12.8b</strong> Check a stack for Attrition by
+consulting the Attrition Table. Roll two
+dice, using the column for the highest
+Action Rating among the units marked
+Out of Supply, and counting only the
+steps in the hex that are Out of Supply.
+The table result is the number of steps
+the stack must lose. The owning player
+chooses how to inflict these losses on the
+Out of Supply units in the stack. There
+is no requirement to take the loss from
+the unit with the highest AR.</p>
+<p><strong>12.8c Fueling Procedures.</strong> When checking for Attrition, do
+not adjust a unit’s AR for being in DG
+Mode, but do adjust for Strat Mode (but
+this should never come up, given <a href="#126-trace-supply">12.6e</a>).</p>
+<p><strong>12.8d Out of Supply Effects.</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/oos-effects-12.8d.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Units
+marked Out of Supply have
+no ZOC. If combat supply
+is available, such units attack
+and defend at half strength.
+Without combat supply, Out of Supply
+units <strong>cannot</strong> attack and defend at 1/4
+strength. Given barrage supply, Out
+of Supply units can barrage normally.
+Units marked Out of Supply can move
+normally.</p>
+<p><strong>12.8e Breakout.</strong> During their Breakout
+Segment, any <strong>combat units</strong> (not non-
+combat units) that are currently out of
+trace supply (make a trace-check during
+this segment) and have a printed MA of
+at least 1 can attempt Breakout if they
+meet the following conditions:</p>
+<ul>
+<li><strong>A)</strong> There must be a path of any length
+from the unit to a friendly unit in
+trace supply. That path <strong>must</strong> be
+free of enemy combat units and
+of terrain that is prohibited for
+movement (using the unit’s MA
+in Move Mode). This path for a
+Truck MP unit must also be free
+of un-negated EZOCs.</li>
+<li><strong>B)</strong> The unit must be at or within 15
+hexes of a friendly combat unit in
+trace supply (straight line distance,
+ignore enemy units/ZOCs.)</li>
+</ul>
+<p><strong>On the first turn</strong> a unit finds itself out
+of trace supply (not after it “eats off the
+map” or uses a special form of trace
+supply such as a Supply Cache or Tree
+Bark Soup), the above conditions are
+waived, the success chance (see below) is
+improved by a +1 DRM, and Transport
+Points are also eligible to Breakout (roll
+for each point separately).</p>
+<p>Breakout is <em>always</em> voluntary.</p>
+<p>Roll for each unit attempting Breakout:</p>
+<ul>
+<li>If the roll is 1-4, the unit fails. It is
+placed in the Dead Pile (and can be
+rebuilt normally).</li>
+<li>If the roll is 5-6, the unit succeeds.
+It is removed from the map, but will
+return to play as a Reinforcement.
+Roll again for each successful unit: it
+returns that number of turns in the
+future. A returning unit retains any
+step loss marker, but loses all other
+markers (Low ammo, DG, etc.).</li>
+</ul>
+<p><em><strong>See Change Notes for more on how to
+use this rule in older series games.</strong></em></p>
+<p><em><strong>Play Note:</strong> Use the Turn Record Track as
+a reminder for when units return.</em></p>
+<h2 id="129-specialty-supply-levels">12.9 Specialty Supply Levels</h2>
+<p><strong>12.9a</strong> Non-combat units (<a href="../3-0-units-and-markers/#33-non-combat-units">3.3</a>) never
+require trace supply or fuel.</p>
+<p><strong>12.9b</strong> HQs need supply just like any
+other combat unit.</p>
+<p><strong>12.9c</strong> Air Bases need on-map supply
+(obtained via Direct Draw or Throwing
+Via HQ) to refit aircraft. Aside from
+this, aircraft do not require supply.</p>
+<p><strong>12.9d</strong> Ships do not require supply.</p>
+<h2 id="1210-internal-stocks">12.10 Internal Stocks</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/internal-stocks-12.10.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Internal stocks represent the
+ammo supplies that a unit
+can draw upon when needed
+SP are unavailable. They can
+be used <strong>only</strong> for combat supply (see
+<a href="../9-0-ground-combat/#95-supply-and-combat">9.5b</a>)—never for barrages, trace supply,
+fuel, etc. A unit’s Combat Strength is
+the same whether using internal stocks
+or on-map supply.
+Show usage of internal stocks individually, 
+placing a Low or Exhausted marker
+under <strong>each</strong> unit.</p>
+<p><strong>12.10a</strong> Internal stocks can be used <strong>only</strong>
+when a unit cannot obtain (via direct
+draw or HQ throw) needed SP from
+on-map stocks. (<strong>Exception:</strong> internal
+stocks <strong>can</strong> be used if the only available
+dump is SP loaded on Organic Trucks.)</p>
+<p><strong>12.10b</strong> When a unit gets combat supply
+from its internal stocks, mark it Low.
+If the unit is already marked Low, flip
+the marker to Exhausted—which means
+that after this combat its internal stocks
+are empty.</p>
+<p><strong>12.10c</strong> A unit that is marked Low or
+Exhausted is still eligible to use regular
+combat supply. If regular combat supply
+is not available, a unit with an Exhausted
+marker cannot attack at all, and must
+defend without combat supply (at half
+strength, per <a href="../9-0-ground-combat/#95-supply-and-combat">9.5a</a>).</p>
+<p><strong>12.10d</strong> No unit can draw on another’s
+internal stocks, even when stacked.</p>
+<p><strong>12.10e Recovery.</strong> Units marked Low or
+Exhausted recover internal stocks in the
+player’s Supply Phase if SP are available
+(obtained via Direct Draw or Throwing
+Via HQ). Recovery from Low costs 2T
+per unit (or RE if a multi-step unit);
+recovery from Exhausted costs twice
+that amount.</p>
+<ul>
+<li><strong>A)</strong> Units <strong>must</strong> recover internals if
+possible, and this recovery takes
+priority over using SP as a substitute for trace supply.</li>
+<li><strong>B)</strong> All supply dumps from which a
+unit can draw or be thrown SP are
+subject to the required recovery
+of internals. (<strong>Exception:</strong> The SP
+loaded on Organic Trucks are free
+from the requirement to provide
+recovery for internals.)</li>
+<li><strong>C)</strong> If some SP are available, but not
+enough to fully recover internals,
+expend whatever supply is avail-
+able. A single T would be wasted;
+2T would recover one “Low” unit
+or improve an “Exhausted” unit to
+“Low” (or be wasted if the only
+recovering units are multi-step).</li>
+</ul>
+<p><strong>12.10f</strong> Out of Supply status does not
+affect internal stocks (or vice versa).</p>
+<p><strong>12.10g</strong> Internal stocks and SP can be
+mixed to pay combat supply. (<strong>Exception:</strong>
+A single counter—even one with
+multiple steps, such as a division—can
+use either internal stocks <strong>or</strong> on-map
+supply; such a unit cannot mix the two
+for itself.)</p>
+<p><strong>12.10h</strong> If a multi-step unit chooses to
+use internal stocks because there is not
+enough on-map supply available, the
+on-map supply must still be spent (it
+is wasted).</p>
+<p><em><strong>Example:</strong> 3 RE (three separate units)
+attempt an attack. The player has 1T of
+supply available. The 1T can be used to
+pay for one unit, and the others would be
+marked Low. If the same attack was done
+by a single multi-step unit, it would be
+marked Low and the 1T would be wasted.</em></p>
+<h2 id="1211-destruction-and-capture">12.11 Destruction and Capture</h2>
+<p><strong>12.11a Blowing Dumps.</strong> All SP in a
+hex, both those loaded on Transport
+Points and those on the ground, can
+be blown if a player fears they may be
+captured by the enemy. A combat unit
+need not be present in the hex. This
+can only be done during the Movement
+Segments of his Movement, Reaction,
+and Exploitation Phases. A player can
+blow a given dump only once per phase,
+and can attempt to blow all or only some
+of the SP in a dump.</p>
+<p>Roll one die on the Dump Blowing
+Table to determine the percentage of SP
+destroyed. Round losses to the nearest
+Token. Note Transport Points cannot
+be destroyed in this manner.</p>
+<p><em><strong>Example:</strong> A player attempts to blow 3 of
+the 4 SP in a dump. He obtains a 75%
+result. 3 x .75 = 2.35, so 2 SP and 1T
+are destroyed.</em></p>
+<p><strong>12.11b Capturing Dumps.</strong> When an
+Attack-Capable unit enters a hex with
+enemy SP and/or Transport Points, roll
+on the appropriate column(s) of the
+Capture Table. (Enemy combat units in
+the hex must of course be evicted before
+an attempt to capture can be made.) See
+<a href="../9-0-ground-combat/#914-specialized-combats">9.14b</a> 
+and <a href="../9-0-ground-combat/#914-specialized-combats">9.14c</a> for complete details.</p>
+<br>
+<h2 id="example-maximum-stretch-of-hqs">Example: Maximum Stretch of HQs</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/rules/ocs-4.3/files/example-hq-stretch.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<br>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/rules/ocs-4.3/11-0-exploitation-phase/" rel="next">11.0 Exploitation Phase</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/rules/ocs-4.3/13-0-specialized-units/" rel="prev">13.0 Specialized Units</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Aug 9, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  <meta name="robots" content="noarchive">
+
+  
+  <p class="powered-by">
+    <a href="/license/">LICENSE: CC-BY-NC <br> <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-nc fa-2x"></i> </a><br>
+  </p>
+  
+
+  <p class="powered-by">
+    © 2021 Eric Van Dornshuld   |
+    &nbsp; All rights reserved.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <script src="/en/js/wowchemy.min.2ddebf8e6b39a7ecfcd4b1fe8ad3a55a.js"></script>
+
+    
+
+
+</body>
+</html>

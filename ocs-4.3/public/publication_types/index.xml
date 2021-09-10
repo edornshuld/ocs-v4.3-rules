@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | OCS Series Rules, 4.3</title>
+    <link>https://dornshuld.chemistry.msstate.edu/publication_types/</link>
+      <atom:link href="https://dornshuld.chemistry.msstate.edu/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Eric Van Dornshuld &amp;nbsp; |</copyright>
+    <image>
+      <url>https://dornshuld.chemistry.msstate.edu/media/logo_hu6bdf6420d562172ea26f03f73e9552af_94123_300x300_fit_lanczos_3.png</url>
+      <title>Publication_types</title>
+      <link>https://dornshuld.chemistry.msstate.edu/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>
